@@ -1,16 +1,7 @@
-# get_random_word
+This application is English - Turkish dictionary and create by user. 
+It shows randomly choice word to user in added words and user try to know this word. 
+If user want to see translate to Turkish user needs pressing “Kelimenin Türkçesi” button. 
+Beside these it presents word editing and word deleting option to you
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+More Info >>>
+https://whimsical-purchase-056.notion.site/RANDOM-WORD-3a8f49b60def4e42aaaf2f94cf5916ba
