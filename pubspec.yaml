@@ -29,8 +29,17 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  sqflite:
-  path:
+  flutter_bloc: ^8.1.0
+  equatable: ^2.0.5
+  mockito: ^5.3.0
+  json_theme:
+  
+  word_api:
+    path: packages/word_api
+  word_repository:
+    path: packages/word_repository
+  sqflite_word_api:
+    path: packages/sqflite_word_api
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -40,6 +49,8 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_launcher_icons:
+  bloc_test: ^9.1.0
+  build_runner: ^2.2.0
 
 
 
@@ -59,7 +70,9 @@ flutter_icons:
 
 # The following section is specific to Flutter packages.
 flutter:
-
+  assets:
+    - assets/theme.json
+    - assets/dictionary.png
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

@@ -1,24 +1,18 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
-import 'package:get_random_word/widget/add_word.dart';
-import 'package:get_random_word/widget/list_word.dart';
-import 'package:get_random_word/widget/show_word.dart';
-import 'package:get_random_word/widget/update_word.dart';
+import 'package:json_theme/json_theme.dart';
+import 'package:flutter/services.dart';
+import 'package:get_random_word/bootstrap.dart';
+import 'package:sqflite_word_api/sqflite_word_api.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      routes: {
-        "/": ((context) => ShowWord()),
-        "/AddWord": ((context) => AddWord()),
-        "/ListWord": ((context) => ListWord()),
-        "/UpdateWord": (context) => UpdateScreen.empty(),
-      },
-      initialRoute: "/",
-    );
-  }
+  final themeStr = await rootBundle.loadString('assets/theme.json');
+  final themeJson = jsonDecode(themeStr);
+  final theme = ThemeDecoder.decodeThemeData(themeJson)!;
+
+  final wordApi = SqfliteWordApi();
+  bootstrap(wordApi, theme);
 }
