@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_random_word/bloc/show_word_cubit/show_word_cubit.dart';
+import 'package:get_random_word/router/router_constants.dart';
 import 'package:get_random_word/screens/add_word.dart';
 import 'package:get_random_word/screens/list_word.dart';
 import 'package:word_repository/word_repository.dart';
@@ -142,10 +143,7 @@ class NavigateAddWord extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
         child: Icon(Icons.add, color: Theme.of(context).colorScheme.onPrimary),
-        onPressed: () {
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => const AddWord()));
-        });
+        onPressed: () => Navigator.pushNamed(context, addWord));
   }
 }
 
@@ -156,9 +154,6 @@ class NavigateListWord extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
         child: Icon(Icons.list_alt_outlined, color: Theme.of(context).colorScheme.onPrimary),
-        onPressed: () {
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => const ListWord()));
-        });
+        onPressed: () => Navigator.pushNamed(context, listWord));
   }
 }

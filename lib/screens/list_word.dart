@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_random_word/bloc/list_word_cubit/list_word_cubit.dart';
-import 'package:get_random_word/screens/update_word.dart';
+import 'package:get_random_word/router/router_constants.dart';
 
 class ListWord extends StatelessWidget {
   const ListWord({super.key});
@@ -40,14 +40,11 @@ class ListWordBody extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15.0)),
                   child: ListTile(
-                    title: Text(state.words[index].englishWord),
-                    subtitle: Text(state.words[index].turkishWord),
-                    onTap: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => UpdateScreen(
-                              word: state.words.elementAt(index))));
-                    },
-                  ),
+                      title: Text(state.words[index].englishWord),
+                      subtitle: Text(state.words[index].turkishWord),
+                      onTap: () => Navigator.pushReplacementNamed(
+                          context, updateWord,
+                          arguments: state.words.elementAt(index))),
                 );
               },
             ),

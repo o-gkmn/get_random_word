@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_random_word/bloc/update_word_cubit/update_word_cubit.dart';
+import 'package:get_random_word/router/router_constants.dart';
 import 'package:get_random_word/validator/add_word_validate.dart';
 import 'package:word_repository/word_repository.dart';
 
@@ -144,7 +145,7 @@ class SaveButton extends StatelessWidget {
                   context.read<UpdateWordCubit>().updateWord(state.word
                       .copyWith(
                           englishWord: englishWord, turkishWord: turkishWord));
-                  Navigator.pushReplacementNamed(context, "/ListWord");
+                  Navigator.pushReplacementNamed(context, listWord);
                 }
               },
               child: Text(
@@ -174,7 +175,7 @@ class DeleteButton extends StatelessWidget {
           child: ElevatedButton(
               onPressed: () {
                 context.read<UpdateWordCubit>().deleteWord(state.word.id);
-                Navigator.pushReplacementNamed(context, "/ListWord");
+                Navigator.pushReplacementNamed(context, listWord);
               },
               child: Text(
                 "Sil",
