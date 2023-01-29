@@ -60,9 +60,11 @@ class EnglishWordField extends StatelessWidget with AddWordValidateMixin {
       width: MediaQuery.of(context).size.width - 50,
       child: TextFormField(
         validator: nullCheck,
-        decoration: const InputDecoration(
+        style: TextStyle(color: Theme.of(context).colorScheme.onBackground),
+        decoration: InputDecoration(
           labelText: "İngilizce kelime",
           hintText: "Buraya yazın",
+          labelStyle: TextStyle(color: Theme.of(context).colorScheme.onBackground),
         ),
         onSaved: (String? value) {
           word = word.copyWith(englishWord: value!);
@@ -81,9 +83,11 @@ class TurkishWordField extends StatelessWidget with AddWordValidateMixin {
       width: MediaQuery.of(context).size.width - 50,
       child: TextFormField(
         validator: nullCheck,
-        decoration: const InputDecoration(
+        style: TextStyle(color: Theme.of(context).colorScheme.onBackground),
+        decoration: InputDecoration(
           labelText: "Türkçe kelime",
           hintText: "Buraya yazın",
+          labelStyle: TextStyle(color: Theme.of(context).colorScheme.onBackground)
         ),
         onSaved: (String? value) {
           word = word.copyWith(turkishWord: value!);
@@ -102,9 +106,6 @@ class SaveButton extends StatelessWidget {
     return SizedBox(
       width: MediaQuery.of(context).size.width - 50,
       child: ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.green,
-        ),
         onPressed: () {
           if (formKey.currentState != null &&
               formKey.currentState!.validate()) {
@@ -113,7 +114,7 @@ class SaveButton extends StatelessWidget {
             formKey.currentState!.reset();
           }
         },
-        child: const Text("Kaydet"),
+        child: Text("Kaydet", style: TextStyle(color: Theme.of(context).colorScheme.onSurface)),
       ),
     );
   }

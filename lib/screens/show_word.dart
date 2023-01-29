@@ -85,9 +85,9 @@ class EnglishWordButton extends StatelessWidget {
               margin: const EdgeInsets.all(7.0),
               padding: const EdgeInsets.all(15.0),
               decoration: BoxDecoration(
-                  color: Colors.green,
+                  color: Theme.of(context).primaryColor,
                   border: Border.all(
-                      style: BorderStyle.solid, color: Colors.green, width: 10),
+                      style: BorderStyle.solid, color: Theme.of(context).primaryColor, width: 10),
                   borderRadius: BorderRadius.circular(15.0)),
               child: Text(state.englishWord_,
                   style: const TextStyle(
@@ -118,9 +118,9 @@ class ShowTranslateButton extends StatelessWidget {
             margin: const EdgeInsets.all(7.0),
             padding: const EdgeInsets.all(15.0),
             decoration: BoxDecoration(
-                color: Colors.grey,
+                color: Theme.of(context).colorScheme.secondary,
                 border: Border.all(
-                    style: BorderStyle.solid, color: Colors.grey, width: 10),
+                    style: BorderStyle.solid, color: Theme.of(context).colorScheme.secondary, width: 10),
                 borderRadius: BorderRadius.circular(15.0)),
             child: Text(
               state.turkishWord_,
@@ -141,7 +141,7 @@ class NavigateAddWord extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-        child: const Icon(Icons.add, color: Colors.white),
+        child: Icon(Icons.add, color: Theme.of(context).colorScheme.onPrimary),
         onPressed: () {
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => const AddWord()));
@@ -155,7 +155,7 @@ class NavigateListWord extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-        child: const Icon(Icons.list_alt_outlined, color: Colors.white),
+        child: Icon(Icons.list_alt_outlined, color: Theme.of(context).colorScheme.onPrimary),
         onPressed: () {
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => const ListWord()));

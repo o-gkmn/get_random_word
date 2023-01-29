@@ -71,10 +71,14 @@ class EnglishWordField extends StatelessWidget with AddWordValidateMixin {
             width: MediaQuery.of(context).size.width - 50,
             child: TextFormField(
               validator: nullCheck,
+              style:
+                  TextStyle(color: Theme.of(context).colorScheme.onBackground),
               initialValue: state.word.englishWord,
               decoration: InputDecoration(
                 labelText: "İngilizce kelime",
                 hintText: state.word.englishWord,
+                labelStyle: TextStyle(
+                    color: Theme.of(context).colorScheme.onBackground),
               ),
               onSaved: (String? value) {
                 englishWord = value!;
@@ -100,10 +104,14 @@ class TurkishWordField extends StatelessWidget with AddWordValidateMixin {
             width: MediaQuery.of(context).size.width - 50,
             child: TextFormField(
               validator: nullCheck,
+              style:
+                  TextStyle(color: Theme.of(context).colorScheme.onBackground),
               initialValue: state.word.turkishWord,
               decoration: InputDecoration(
                 labelText: "Türkçe kelime",
                 hintText: state.word.turkishWord,
+                labelStyle: TextStyle(
+                    color: Theme.of(context).colorScheme.onBackground),
               ),
               onSaved: (String? value) {
                 turkishWord = value!;
@@ -129,9 +137,6 @@ class SaveButton extends StatelessWidget {
           return SizedBox(
             width: (MediaQuery.of(context).size.width / 2) - 20,
             child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green,
-              ),
               onPressed: () {
                 if (formKey.currentState != null &&
                     formKey.currentState!.validate()) {
@@ -142,7 +147,11 @@ class SaveButton extends StatelessWidget {
                   Navigator.pushReplacementNamed(context, "/ListWord");
                 }
               },
-              child: const Text("Güncelle"),
+              child: Text(
+                "Güncelle",
+                style:
+                    TextStyle(color: Theme.of(context).colorScheme.onSurface),
+              ),
             ),
           );
         }
@@ -163,14 +172,15 @@ class DeleteButton extends StatelessWidget {
         return SizedBox(
           width: (MediaQuery.of(context).size.width / 2) - 20,
           child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green,
-              ),
               onPressed: () {
                 context.read<UpdateWordCubit>().deleteWord(state.word.id);
                 Navigator.pushReplacementNamed(context, "/ListWord");
               },
-              child: const Text("Sil")),
+              child: Text(
+                "Sil",
+                style:
+                    TextStyle(color: Theme.of(context).colorScheme.onSurface),
+              )),
         );
       }
       return const Center(child: CircularProgressIndicator());
