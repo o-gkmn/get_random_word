@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_random_word/bloc/update_word_cubit/update_word_cubit.dart';
 import 'package:get_random_word/router/router_constants.dart';
 import 'package:get_random_word/validator/add_word_validate.dart';
+import 'package:get_random_word/widgets/custom_alert_dialog.dart';
 import 'package:word_repository/word_repository.dart';
 
 String turkishWord = "";
@@ -22,7 +23,25 @@ class UpdateScreen extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Güncelle"),
         ),
-        body: UpdateScreenBody(),
+        body: BlocListener<UpdateWordCubit, UpdateWordState>(
+            listener: (context, state) {
+              switch (state.status) {
+                case UpdateStatus.failure:
+                  showDialog(
+                    context: context,
+                    builder: (context) => CustomAlertDialog(
+                      alertText: state.exception.toString(),
+                    ),
+                  );
+                  break;
+                case UpdateStatus.succed:
+                  Navigator.pushReplacementNamed(context, listWord);
+                  break;
+                case UpdateStatus.inital:
+                default:
+              }
+            },
+            child: UpdateScreenBody()),
       ),
     );
   }
@@ -67,27 +86,23 @@ class EnglishWordField extends StatelessWidget with AddWordValidateMixin {
   Widget build(BuildContext context) {
     return BlocBuilder<UpdateWordCubit, UpdateWordState>(
       builder: (context, state) {
-        if (state is UpdateWordLoaded) {
-          return SizedBox(
-            width: MediaQuery.of(context).size.width - 50,
-            child: TextFormField(
-              validator: nullCheck,
-              style:
+        return SizedBox(
+          width: MediaQuery.of(context).size.width - 50,
+          child: TextFormField(
+            validator: nullCheck,
+            style: TextStyle(color: Theme.of(context).colorScheme.onBackground),
+            initialValue: state.word.englishWord,
+            decoration: InputDecoration(
+              labelText: "İngilizce kelime",
+              hintText: state.word.englishWord,
+              labelStyle:
                   TextStyle(color: Theme.of(context).colorScheme.onBackground),
-              initialValue: state.word.englishWord,
-              decoration: InputDecoration(
-                labelText: "İngilizce kelime",
-                hintText: state.word.englishWord,
-                labelStyle: TextStyle(
-                    color: Theme.of(context).colorScheme.onBackground),
-              ),
-              onSaved: (String? value) {
-                englishWord = value!;
-              },
             ),
-          );
-        }
-        return const Center(child: CircularProgressIndicator());
+            onSaved: (String? value) {
+              englishWord = value!;
+            },
+          ),
+        );
       },
     );
   }
@@ -100,27 +115,23 @@ class TurkishWordField extends StatelessWidget with AddWordValidateMixin {
   Widget build(BuildContext context) {
     return BlocBuilder<UpdateWordCubit, UpdateWordState>(
       builder: (context, state) {
-        if (state is UpdateWordLoaded) {
-          return SizedBox(
-            width: MediaQuery.of(context).size.width - 50,
-            child: TextFormField(
-              validator: nullCheck,
-              style:
+        return SizedBox(
+          width: MediaQuery.of(context).size.width - 50,
+          child: TextFormField(
+            validator: nullCheck,
+            style: TextStyle(color: Theme.of(context).colorScheme.onBackground),
+            initialValue: state.word.turkishWord,
+            decoration: InputDecoration(
+              labelText: "Türkçe kelime",
+              hintText: state.word.turkishWord,
+              labelStyle:
                   TextStyle(color: Theme.of(context).colorScheme.onBackground),
-              initialValue: state.word.turkishWord,
-              decoration: InputDecoration(
-                labelText: "Türkçe kelime",
-                hintText: state.word.turkishWord,
-                labelStyle: TextStyle(
-                    color: Theme.of(context).colorScheme.onBackground),
-              ),
-              onSaved: (String? value) {
-                turkishWord = value!;
-              },
             ),
-          );
-        }
-        return const Center(child: CircularProgressIndicator());
+            onSaved: (String? value) {
+              turkishWord = value!;
+            },
+          ),
+        );
       },
     );
   }
@@ -134,29 +145,24 @@ class SaveButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<UpdateWordCubit, UpdateWordState>(
       builder: (context, state) {
-        if (state is UpdateWordLoaded) {
-          return SizedBox(
-            width: (MediaQuery.of(context).size.width / 2) - 20,
-            child: ElevatedButton(
-              onPressed: () {
-                if (formKey.currentState != null &&
-                    formKey.currentState!.validate()) {
-                  formKey.currentState!.save();
-                  context.read<UpdateWordCubit>().updateWord(state.word
-                      .copyWith(
-                          englishWord: englishWord, turkishWord: turkishWord));
-                  Navigator.pushReplacementNamed(context, listWord);
-                }
-              },
-              child: Text(
-                "Güncelle",
-                style:
-                    TextStyle(color: Theme.of(context).colorScheme.onSurface),
-              ),
+        return SizedBox(
+          width: (MediaQuery.of(context).size.width / 2) - 20,
+          child: ElevatedButton(
+            onPressed: () {
+              if (formKey.currentState != null &&
+                  formKey.currentState!.validate()) {
+                formKey.currentState!.save();
+                context.read<UpdateWordCubit>().updateWord(state.word.copyWith(
+                    englishWord: englishWord, turkishWord: turkishWord));
+                Navigator.pushReplacementNamed(context, listWord);
+              }
+            },
+            child: Text(
+              "Güncelle",
+              style: TextStyle(color: Theme.of(context).colorScheme.onSurface),
             ),
-          );
-        }
-        return const Center(child: CircularProgressIndicator());
+          ),
+        );
       },
     );
   }
@@ -169,22 +175,18 @@ class DeleteButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<UpdateWordCubit, UpdateWordState>(
         builder: (context, state) {
-      if (state is UpdateWordLoaded) {
-        return SizedBox(
-          width: (MediaQuery.of(context).size.width / 2) - 20,
-          child: ElevatedButton(
-              onPressed: () {
-                context.read<UpdateWordCubit>().deleteWord(state.word.id);
-                Navigator.pushReplacementNamed(context, listWord);
-              },
-              child: Text(
-                "Sil",
-                style:
-                    TextStyle(color: Theme.of(context).colorScheme.onSurface),
-              )),
-        );
-      }
-      return const Center(child: CircularProgressIndicator());
+      return SizedBox(
+        width: (MediaQuery.of(context).size.width / 2) - 20,
+        child: ElevatedButton(
+            onPressed: () {
+              context.read<UpdateWordCubit>().deleteWord(state.word.id);
+              Navigator.pushReplacementNamed(context, listWord);
+            },
+            child: Text(
+              "Sil",
+              style: TextStyle(color: Theme.of(context).colorScheme.onSurface),
+            )),
+      );
     });
   }
 }

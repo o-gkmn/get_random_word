@@ -6,18 +6,24 @@ import 'package:word_repository/word_repository.dart';
 part 'list_word_state.dart';
 
 class ListWordCubit extends Cubit<ListWordState> {
-  ListWordCubit(this.repository) : super(ListWordInitial()) {
-    initialListWord();
-  }
+  ListWordCubit(this.repository)
+      : super(const ListWordState(status: ListStatus.initial));
 
   final WordRepository repository;
 
   void initialListWord() async {
-    List<Word> words = await repository.getWords();
+    List<Word> words;
+    try {
+      words = await repository.getWords();
+    } catch (e) {
+      emit(state.copyWith(
+          status: ListStatus.failure, exception: e as Exception));
+      return;
+    }
     if (words.isEmpty) {
-      emit(ListWordEmpty());
+      emit(state.copyWith(status: ListStatus.empty));
     } else {
-      emit(ListWordLoaded(words: words));
+      emit(state.copyWith(status: ListStatus.succed, words: words));
     }
   }
 }

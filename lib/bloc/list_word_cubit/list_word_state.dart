@@ -1,21 +1,23 @@
 part of 'list_word_cubit.dart';
 
-abstract class ListWordState extends Equatable {
-  const ListWordState();
+enum ListStatus { initial, succed, failure, empty }
 
-  @override
-  List<Object> get props => [];
-}
+class ListWordState extends Equatable {
+  const ListWordState(
+      {required this.status, this.words = const <Word>[], this.exception});
 
-class ListWordInitial extends ListWordState {}
-
-class ListWordLoaded extends ListWordState {
+  final ListStatus status;
   final List<Word> words;
+  final Exception? exception;
 
-  const ListWordLoaded({required this.words});
+  ListWordState copyWith(
+      {ListStatus? status, List<Word>? words, Exception? exception}) {
+    return ListWordState(
+        status: status ?? this.status,
+        words: words ?? this.words,
+        exception: exception ?? this.exception);
+  }
 
   @override
-  List<Object> get props => [words];
+  List<Object> get props => [status, words];
 }
-
-class ListWordEmpty extends ListWordState {}
