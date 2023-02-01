@@ -1,53 +1,39 @@
 part of 'show_word_cubit.dart';
 
-enum Button { englishWordButton, turkishWordButton }
+enum WordStatus { openEnglishWord, openTurkishWord, bothOpen, bothClose }
 
-abstract class ShowWordState extends Equatable {
-  const ShowWordState(
-      {this.englishWord_ = "İngilizce Kelime",
-      this.turkishWord_ = "Türkçe Kelime",
-      this.englishState_ = false,
-      this.turkishState_ = false});
+enum PageStatus { initial, loading, loaded, error }
 
-  final String englishWord_;
-  final String turkishWord_;
+class ShowWordState extends Equatable {
+  const ShowWordState({
+    required this.pageStatus,
+    this.wordStatus = WordStatus.bothClose,
+    this.englishWord = "İngilizce Kelime",
+    this.turkishWord = "Türkçe Kelime",
+    this.exception,
+  });
 
-  final bool englishState_;
-  final bool turkishState_;
-
-  @override
-  List<Object> get props =>
-      [englishWord_, turkishWord_, englishState_, turkishState_];
-}
-
-class ShowWordLoaded extends ShowWordState {
-  const ShowWordLoaded(
-      {required this.englishWord,
-      required this.turkishWord,
-      required this.englishState,
-      required this.turkishState})
-      : super(
-            englishWord_: englishWord,
-            turkishWord_: turkishWord,
-            englishState_: englishState,
-            turkishState_: turkishState);
-
+  final PageStatus pageStatus;
+  final WordStatus wordStatus;
   final String englishWord;
   final String turkishWord;
+  final Exception? exception;
 
-  final bool englishState;
-  final bool turkishState;
+  ShowWordState copyWith(
+      {PageStatus? pageStatus,
+      WordStatus? wordStatus,
+      String? englishWord,
+      String? turkishWord,
+      Exception? exception}) {
+    return ShowWordState(
+      pageStatus: pageStatus ?? this.pageStatus,
+      wordStatus: wordStatus ?? this.wordStatus,
+      englishWord: englishWord ?? this.englishWord,
+      turkishWord: turkishWord ?? this.turkishWord,
+      exception: exception ?? this.exception,
+    );
+  }
 
   @override
-  List<Object> get props =>
-      [englishWord, turkishWord, englishState, turkishState];
-}
-
-class ShowWordError extends ShowWordState {
-  final String e;
-
-  const ShowWordError(this.e);
-
-  @override
-  List<Object> get props => [e];
+  List<Object> get props => [pageStatus, wordStatus, englishWord, turkishWord];
 }

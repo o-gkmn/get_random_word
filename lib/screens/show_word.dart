@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_random_word/bloc/show_word_cubit/show_word_cubit.dart';
 import 'package:get_random_word/router/router_constants.dart';
-import 'package:get_random_word/screens/add_word.dart';
-import 'package:get_random_word/screens/list_word.dart';
 import 'package:word_repository/word_repository.dart';
 
 class ShowWord extends StatelessWidget {
@@ -12,9 +10,11 @@ class ShowWord extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-        create: (context) =>
-            ShowWordCubit(RepositoryProvider.of<WordRepository>(context)),
-        child: const ShowWordView());
+      create: (context) => ShowWordCubit(
+        RepositoryProvider.of<WordRepository>(context),
+      )..initialRandomWordList(),
+      child: const ShowWordView(),
+    );
   }
 }
 
@@ -26,12 +26,17 @@ class ShowWordView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Random Word"),
-        actions: const <Widget>[NavigateAddWord(), NavigateListWord()],
+        actions: const <Widget>[
+          NavigateAddWord(),
+          NavigateListWord(),
+        ],
       ),
       body: Container(
         padding: const EdgeInsets.all(15.0),
-        child:
-            const Align(alignment: Alignment.center, child: ShowWordDesign()),
+        child: const Align(
+          alignment: Alignment.center,
+          child: ShowWordDesign(),
+        ),
       ),
     );
   }
@@ -45,20 +50,35 @@ class ShowWordDesign extends StatelessWidget {
     return BlocListener<ShowWordCubit, ShowWordState>(
       bloc: BlocProvider.of<ShowWordCubit>(context),
       listener: (context, state) {
-        if (state is ShowWordError) {
-          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-            content: Text(state.e),
-            backgroundColor: Colors.red,
-          ));
-          context.read<ShowWordCubit>().emitLoadedState();
+        if (state.pageStatus == PageStatus.error) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                state.exception.toString(),
+              ),
+              backgroundColor: Colors.red,
+            ),
+          );
         }
+        // if (state.pageStatus == PageStatus.loading) {
+        //   ScaffoldMessenger.of(context).showSnackBar(
+        //     const SnackBar(
+        //         content: Text(
+        //           "Liste yüklemesi sürüyor...",
+        //         ),
+        //         backgroundColor: Colors.amberAccent),
+        //   );
+        // }
       },
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Column(
-            children: const [EnglishWordButton(), ShowTranslateButton()],
+            children: const [
+              EnglishWordButton(),
+              ShowTranslateButton(),
+            ],
           ),
         ],
       ),
@@ -74,26 +94,34 @@ class EnglishWordButton extends StatelessWidget {
     return BlocBuilder<ShowWordCubit, ShowWordState>(
       builder: (context, state) {
         return TextButton(
-            onPressed: () {
-              context
-                  .read<ShowWordCubit>()
-                  .getRandomWord(Button.englishWordButton, state);
-            },
-            style: TextButton.styleFrom(
-                foregroundColor: Theme.of(context).scaffoldBackgroundColor,
-                elevation: 0.0),
-            child: Container(
-              margin: const EdgeInsets.all(7.0),
-              padding: const EdgeInsets.all(15.0),
-              decoration: BoxDecoration(
-                  color: Theme.of(context).primaryColor,
-                  border: Border.all(
-                      style: BorderStyle.solid, color: Theme.of(context).primaryColor, width: 10),
-                  borderRadius: BorderRadius.circular(15.0)),
-              child: Text(state.englishWord_,
-                  style: const TextStyle(
-                      fontSize: 20, fontFamily: "Times New Roman")),
-            ));
+          onPressed: () {
+            context.read<ShowWordCubit>().emitOpenEnglishWord();
+          },
+          style: TextButton.styleFrom(
+            foregroundColor: Theme.of(context).scaffoldBackgroundColor,
+            elevation: 0.0,
+          ),
+          child: Container(
+            margin: const EdgeInsets.all(7.0),
+            padding: const EdgeInsets.all(15.0),
+            decoration: BoxDecoration(
+              color: Theme.of(context).primaryColor,
+              border: Border.all(
+                style: BorderStyle.solid,
+                color: Theme.of(context).primaryColor,
+                width: 10,
+              ),
+              borderRadius: BorderRadius.circular(15.0),
+            ),
+            child: Text(
+              state.englishWord,
+              style: const TextStyle(
+                fontSize: 20,
+                fontFamily: "Times New Roman",
+              ),
+            ),
+          ),
+        );
       },
     );
   }
@@ -108,26 +136,31 @@ class ShowTranslateButton extends StatelessWidget {
       builder: (context, state) {
         return TextButton(
           onPressed: () {
-            context
-                .read<ShowWordCubit>()
-                .getRandomWord(Button.turkishWordButton, state);
+            context.read<ShowWordCubit>().emitOpenTurkishWord();
           },
           style: TextButton.styleFrom(
-              foregroundColor: Theme.of(context).scaffoldBackgroundColor,
-              elevation: 0.0),
+            foregroundColor: Theme.of(context).scaffoldBackgroundColor,
+            elevation: 0.0,
+          ),
           child: Container(
             margin: const EdgeInsets.all(7.0),
             padding: const EdgeInsets.all(15.0),
             decoration: BoxDecoration(
+              color: Theme.of(context).colorScheme.secondary,
+              border: Border.all(
+                style: BorderStyle.solid,
                 color: Theme.of(context).colorScheme.secondary,
-                border: Border.all(
-                    style: BorderStyle.solid, color: Theme.of(context).colorScheme.secondary, width: 10),
-                borderRadius: BorderRadius.circular(15.0)),
+                width: 10,
+              ),
+              borderRadius: BorderRadius.circular(15.0),
+            ),
             child: Text(
-              state.turkishWord_,
+              state.turkishWord,
               textWidthBasis: TextWidthBasis.longestLine,
-              style:
-                  const TextStyle(fontSize: 20, fontFamily: "Times New Roman"),
+              style: const TextStyle(
+                fontSize: 20,
+                fontFamily: "Times New Roman",
+              ),
             ),
           ),
         );
@@ -141,9 +174,17 @@ class NavigateAddWord extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextButton(
-        child: Icon(Icons.add, color: Theme.of(context).colorScheme.onPrimary),
-        onPressed: () => Navigator.pushNamed(context, addWord));
+    return BlocBuilder<ShowWordCubit, ShowWordState>(builder: (context, state) {
+      return TextButton(
+        child: Icon(
+          Icons.add,
+          color: Theme.of(context).colorScheme.onPrimary,
+        ),
+        onPressed: () => Navigator.pushNamed(context, addWord).then(
+          (value) => context.read<ShowWordCubit>().initialRandomWordList(),
+        ),
+      );
+    });
   }
 }
 
@@ -153,7 +194,11 @@ class NavigateListWord extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-        child: Icon(Icons.list_alt_outlined, color: Theme.of(context).colorScheme.onPrimary),
-        onPressed: () => Navigator.pushNamed(context, listWord));
+      child: Icon(
+        Icons.list_alt_outlined,
+        color: Theme.of(context).colorScheme.onPrimary,
+      ),
+      onPressed: () => Navigator.pushNamed(context, listWord),
+    );
   }
 }

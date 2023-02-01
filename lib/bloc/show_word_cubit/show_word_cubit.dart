@@ -1,6 +1,5 @@
 import 'dart:math';
 
-// ignore: depend_on_referenced_packages
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:word_repository/word_repository.dart';
@@ -9,84 +8,76 @@ part 'show_word_state.dart';
 
 class ShowWordCubit extends Cubit<ShowWordState> {
   ShowWordCubit(this.wordRepository)
-      : super(const ShowWordLoaded(
-            englishWord: "İngilizce Kelime",
-            turkishWord: "Türkçe Kelime",
-            englishState: false,
-            turkishState: false));
+      : super(const ShowWordState(
+            pageStatus: PageStatus.initial, wordStatus: WordStatus.bothClose));
 
   late Word randomWord;
+  late List<Word> words;
 
   final WordRepository wordRepository;
 
-  Future<Word> initialRandomWord() async {
+  void initialRandomWordList() async {
+    try {
+      emit(state.copyWith(pageStatus: PageStatus.loading));
+      words = await wordRepository.getWords();
+      emit(state.copyWith(pageStatus: PageStatus.loaded));
+    } catch (e) {
+      emit(state.copyWith(
+          pageStatus: PageStatus.error, exception: e as Exception));
+    }
+  }
+
+  Word generateRandomWord() {
     Random random = Random();
-    List<Word> words = await wordRepository.getWords();
     if (words.isEmpty) {
-      emit(const ShowWordError(
-          "Kelime listeniz boş. Lütfen önce kelime ekleyin"));
+      emit(state.copyWith(
+          pageStatus: PageStatus.error,
+          exception:
+              Exception("Kelime listeniz boş. Lütfen önce kelime ekleyin")));
     }
     randomWord = words.elementAt(random.nextInt(words.length));
     return randomWord;
   }
 
-  void emitLoadedState() {
-    emit(const ShowWordLoaded(
-        englishWord: "İngilizce Kelime",
-        turkishWord: "Türkçe Kelime",
-        englishState: false,
-        turkishState: false));
+  void emitOpenEnglishWord() {
+    checkStatus();
+    if (state.wordStatus == WordStatus.openTurkishWord) {
+      emitBothOpen();
+      return;
+    }
+    if (state.wordStatus == WordStatus.openEnglishWord) {
+      generateRandomWord();
+    }
+    emit(state.copyWith(
+        wordStatus: WordStatus.openEnglishWord,
+        englishWord: randomWord.englishWord,
+        turkishWord: "Çeviri için tıklayınız"));
   }
 
-  void getRandomWord(Button button, ShowWordState state) async {
-    if (state is ShowWordLoaded) {
-      if ((state.englishState && state.turkishState) ||
-          (!state.englishState && !state.turkishState)) {
-        await initialRandomWord();
-        if (button == Button.englishWordButton) {
-          emit(ShowWordLoaded(
-              englishWord: randomWord.englishWord,
-              turkishWord: "Çeviri için tıklaıyn",
-              englishState: true,
-              turkishState: false));
-        } else if (button == Button.turkishWordButton) {
-          emit(ShowWordLoaded(
-              englishWord: "Çeviri için tıklaıyn",
-              turkishWord: randomWord.turkishWord,
-              englishState: false,
-              turkishState: true));
-        }
-      } else if (!state.englishState && state.turkishState) {
-        if (button == Button.englishWordButton) {
-          emit(ShowWordLoaded(
-              englishWord: randomWord.englishWord,
-              turkishWord: state.turkishWord,
-              englishState: true,
-              turkishState: true));
-        } else if (button == Button.turkishWordButton) {
-          await initialRandomWord();
-          emit(ShowWordLoaded(
-              englishWord: "Çeviri için tıklaıyn",
-              turkishWord: randomWord.turkishWord,
-              englishState: false,
-              turkishState: true));
-        }
-      } else if (state.englishState && !state.turkishState) {
-        if (button == Button.englishWordButton) {
-          await initialRandomWord();
-          emit(ShowWordLoaded(
-              englishWord: randomWord.englishWord,
-              turkishWord: "Çeviri için tıklaıyn",
-              englishState: true,
-              turkishState: false));
-        } else if (button == Button.turkishWordButton) {
-          emit(ShowWordLoaded(
-              englishWord: state.englishWord,
-              turkishWord: randomWord.turkishWord,
-              englishState: true,
-              turkishState: true));
-        }
-      }
+  void emitOpenTurkishWord() {
+    checkStatus();
+    if (state.wordStatus == WordStatus.openEnglishWord) {
+      emitBothOpen();
+      return;
+    }
+    if(state.wordStatus == WordStatus.openTurkishWord){
+      generateRandomWord();
+    }
+    emit(state.copyWith(
+        wordStatus: WordStatus.openTurkishWord,
+        turkishWord: randomWord.turkishWord,
+        englishWord: "Çeviri için tıklayın"));
+  }
+
+  void emitBothOpen() => emit(state.copyWith(
+      wordStatus: WordStatus.bothOpen,
+      englishWord: randomWord.englishWord,
+      turkishWord: randomWord.turkishWord));
+
+  void checkStatus() {
+    if (state.wordStatus == WordStatus.bothOpen ||
+        state.wordStatus == WordStatus.bothClose) {
+      generateRandomWord();
     }
   }
 }
