@@ -34,6 +34,7 @@ class ShowWordCubit extends Cubit<ShowWordState> {
           pageStatus: PageStatus.error,
           exception:
               Exception("Kelime listeniz boş. Lütfen önce kelime ekleyin")));
+      return const Word.empty();
     }
     randomWord = words.elementAt(random.nextInt(words.length));
     return randomWord;
@@ -51,7 +52,7 @@ class ShowWordCubit extends Cubit<ShowWordState> {
     emit(state.copyWith(
         wordStatus: WordStatus.openEnglishWord,
         englishWord: randomWord.englishWord,
-        turkishWord: "Çeviri için tıklayınız"));
+        turkishWord: "Çeviri için Tıklayınız"));
   }
 
   void emitOpenTurkishWord() {
@@ -66,7 +67,7 @@ class ShowWordCubit extends Cubit<ShowWordState> {
     emit(state.copyWith(
         wordStatus: WordStatus.openTurkishWord,
         turkishWord: randomWord.turkishWord,
-        englishWord: "Çeviri için tıklayın"));
+        englishWord: "Çeviri için Tıklayınız"));
   }
 
   void emitBothOpen() => emit(state.copyWith(
