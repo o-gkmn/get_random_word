@@ -25,12 +25,38 @@ class ShowWordView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 20.0,
+        shadowColor: Colors.black,
         title: const Text("Random Word"),
-        actions: const <Widget>[
-          NavigateAddWord(),
-          NavigateListWord(),
-        ],
+        centerTitle: true,
+        // actions: const <Widget>[
+        //   NavigateAddWord(),
+        //   NavigateListWord(),
+        // ],
       ),
+      floatingActionButton: const PopupMenu(),
+      // floatingActionButton: FloatingActionButton.extended(
+      //   onPressed: () {
+      //     showMenu(
+      //         context: context,
+      //         position: RelativeRect.fromDirectional(
+      //             textDirection: TextDirection.ltr,
+      //             start: 120.0,
+      //             top: 400.0,
+      //             end: 120.0,
+      //             bottom: 400.0),
+      //         //color: const Color(0x00000000),
+      //         elevation: 0.0,
+      //         items: [
+      //           const PopupMenuItem(child: NavigateListWord()),
+      //           const PopupMenuItem(child: NavigateAddWord())
+      //         ]);
+      //   },
+      //   label: Icon(
+      //     Icons.menu,
+      //     color: Theme.of(context).colorScheme.onSurface,
+      //   ),
+      // ),
       body: Container(
         padding: const EdgeInsets.all(15.0),
         child: const Align(
@@ -174,17 +200,22 @@ class NavigateAddWord extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<ShowWordCubit, ShowWordState>(builder: (context, state) {
-      return TextButton(
-        child: Icon(
+    return Container(
+      alignment: Alignment.centerRight,
+      child: ElevatedButton.icon(
+        label: Text(
+          "Kelime Ekle",
+          style: TextStyle(color: Theme.of(context).colorScheme.onSurface),
+        ),
+        icon: Icon(
           Icons.add,
           color: Theme.of(context).colorScheme.onPrimary,
         ),
         onPressed: () => Navigator.pushNamed(context, addWord).then(
           (value) => context.read<ShowWordCubit>().initialRandomWordList(),
         ),
-      );
-    });
+      ),
+    );
   }
 }
 
@@ -193,12 +224,64 @@ class NavigateListWord extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextButton(
-      child: Icon(
-        Icons.list_alt_outlined,
-        color: Theme.of(context).colorScheme.onPrimary,
+    return Container(
+      alignment: Alignment.centerRight,
+      child: ElevatedButton.icon(
+        label: Text(
+          "Kelime Listesi",
+          style: TextStyle(color: Theme.of(context).colorScheme.onSurface),
+        ),
+        icon: Icon(
+          Icons.list_alt_outlined,
+          color: Theme.of(context).colorScheme.onPrimary,
+        ),
+        onPressed: () => Navigator.pushNamed(context, listWord),
       ),
-      onPressed: () => Navigator.pushNamed(context, listWord),
+    );
+  }
+}
+
+class PopupMenu extends StatelessWidget {
+  const PopupMenu({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return PopupMenuButton(
+      color: const Color(0x00000000),
+      elevation: 0.0,
+      offset: const Offset(0, -110),
+      itemBuilder: (context) {
+        return [
+          const PopupMenuItem(
+            padding: EdgeInsets.all(0.0),
+            child: NavigateListWord(),
+          ),
+          const PopupMenuItem(
+            padding: EdgeInsets.all(0.0),
+            child: NavigateAddWord(),
+          ),
+        ];
+      },
+      child: Container(
+        width: 56.0,
+        height: 56.0,
+        decoration: BoxDecoration(
+          border: Border.all(color: Theme.of(context).colorScheme.primary),
+          borderRadius: BorderRadius.circular(15.0),
+          color: Theme.of(context).colorScheme.primary,
+          boxShadow: [
+            BoxShadow(
+              color: Theme.of(context).colorScheme.onBackground,
+              offset: const Offset(0.0, 1.0),
+              blurRadius: 8.0,
+            ),
+          ],
+        ),
+        child: Icon(
+          Icons.menu,
+          color: Theme.of(context).colorScheme.background,
+        ),
+      ),
     );
   }
 }
