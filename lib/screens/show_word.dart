@@ -29,34 +29,8 @@ class ShowWordView extends StatelessWidget {
         shadowColor: Colors.black,
         title: const Text("Random Word"),
         centerTitle: true,
-        // actions: const <Widget>[
-        //   NavigateAddWord(),
-        //   NavigateListWord(),
-        // ],
       ),
       floatingActionButton: const PopupMenu(),
-      // floatingActionButton: FloatingActionButton.extended(
-      //   onPressed: () {
-      //     showMenu(
-      //         context: context,
-      //         position: RelativeRect.fromDirectional(
-      //             textDirection: TextDirection.ltr,
-      //             start: 120.0,
-      //             top: 400.0,
-      //             end: 120.0,
-      //             bottom: 400.0),
-      //         //color: const Color(0x00000000),
-      //         elevation: 0.0,
-      //         items: [
-      //           const PopupMenuItem(child: NavigateListWord()),
-      //           const PopupMenuItem(child: NavigateAddWord())
-      //         ]);
-      //   },
-      //   label: Icon(
-      //     Icons.menu,
-      //     color: Theme.of(context).colorScheme.onSurface,
-      //   ),
-      // ),
       body: Container(
         padding: const EdgeInsets.all(15.0),
         child: const Align(
@@ -86,15 +60,6 @@ class ShowWordDesign extends StatelessWidget {
             ),
           );
         }
-        // if (state.pageStatus == PageStatus.loading) {
-        //   ScaffoldMessenger.of(context).showSnackBar(
-        //     const SnackBar(
-        //         content: Text(
-        //           "Liste yüklemesi sürüyor...",
-        //         ),
-        //         backgroundColor: Colors.amberAccent),
-        //   );
-        // }
       },
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -250,15 +215,15 @@ class PopupMenu extends StatelessWidget {
       color: const Color(0x00000000),
       elevation: 0.0,
       offset: const Offset(0, -110),
-      itemBuilder: (context) {
+      itemBuilder: (_) {
         return [
           const PopupMenuItem(
             padding: EdgeInsets.all(0.0),
             child: NavigateListWord(),
           ),
-          const PopupMenuItem(
-            padding: EdgeInsets.all(0.0),
-            child: NavigateAddWord(),
+          PopupMenuItem(
+            padding: const EdgeInsets.all(0.0),
+            child: const NavigateAddWord().build(context),
           ),
         ];
       },
