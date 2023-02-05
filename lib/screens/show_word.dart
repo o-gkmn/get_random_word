@@ -103,6 +103,13 @@ class EnglishWordButton extends StatelessWidget {
                 width: 10,
               ),
               borderRadius: BorderRadius.circular(15.0),
+              boxShadow: const [
+                BoxShadow(
+                  color: Colors.grey,
+                  offset: Offset(0.0, 1.0), //(x,y)
+                  blurRadius: 6.0,
+                ),
+              ],
             ),
             child: Text(
               state.englishWord,
@@ -144,6 +151,13 @@ class ShowTranslateButton extends StatelessWidget {
                 width: 10,
               ),
               borderRadius: BorderRadius.circular(15.0),
+              boxShadow: const [
+                BoxShadow(
+                  color: Colors.grey,
+                  offset: Offset(0.0, 1.0), //(x,y)
+                  blurRadius: 6.0,
+                ),
+              ],
             ),
             child: Text(
               state.turkishWord,
@@ -206,12 +220,49 @@ class NavigateListWord extends StatelessWidget {
   }
 }
 
-class PopupMenu extends StatelessWidget {
+class PopupMenu extends StatefulWidget {
   const PopupMenu({super.key});
+
+  @override
+  State<StatefulWidget> createState() {
+    return _PopupMenuState();
+  }
+}
+
+class _PopupMenuState extends State<PopupMenu>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _animationController;
+
+  @override
+  void initState() {
+    super.initState();
+    _animationController = AnimationController(
+        vsync: this, duration: const Duration(milliseconds: 500));
+  }
+
+  @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
+
+  void _forwardAnimation() {
+    setState(() {
+      _animationController.forward();
+    });
+  }
+
+  void _reverseAnimation() {
+    setState(() {
+      _animationController.reverse();
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return PopupMenuButton(
+      onOpened: _forwardAnimation,
+      onCanceled: _reverseAnimation,
       color: const Color(0x00000000),
       elevation: 0.0,
       offset: const Offset(0, -110),
@@ -228,6 +279,7 @@ class PopupMenu extends StatelessWidget {
         ];
       },
       child: Container(
+        alignment: Alignment.center,
         width: 56.0,
         height: 56.0,
         decoration: BoxDecoration(
@@ -242,9 +294,10 @@ class PopupMenu extends StatelessWidget {
             ),
           ],
         ),
-        child: Icon(
-          Icons.menu,
-          color: Theme.of(context).colorScheme.background,
+        child: AnimatedIcon(
+          icon: AnimatedIcons.menu_arrow,
+          progress: _animationController,
+          color: Theme.of(context).colorScheme.onSurface,
         ),
       ),
     );
