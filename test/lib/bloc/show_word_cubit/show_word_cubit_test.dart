@@ -1,7 +1,6 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:get_random_word/bloc/show_word_cubit/show_word_cubit.dart';
-import 'package:get_random_word/screens/update_word.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:word_repository/word_repository.dart';
 

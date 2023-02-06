@@ -1,25 +1,24 @@
+import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:get_random_word/bloc/add_word_cubit/add_word_cubit.dart';
+import 'package:mocktail/mocktail.dart';
 import 'package:word_repository/word_repository.dart';
-import 'package:mockito/mockito.dart';
 
-import '../../../packages/word_repository/word_repository_test.dart';
-import '../../../packages/word_repository/word_repository_test.mocks.dart';
+class MockWordRepository extends Mock implements WordRepository {}
 
 void main() {
-  group("AddWordCubit test", () {
-    late AddWordCubit addWordCubit;
-    MockMockWordApi mockApi;
-    WordRepository testRepo;
+  late AddWordCubit addWordCubit;
+  late MockWordRepository mockWordRepository;
 
-    setUp(() {
-      mockApi = MockMockWordApi();
-      testRepo = WordRepository(wordApi: mockApi);
-      addWordCubit = AddWordCubit(testRepo);
-      when(testRepo.getWords()).thenAnswer((_) async => words);
-      when(testRepo.add(word))
-          .thenAnswer((realInvocation) async => words.add(word));
-    });
+  setUp(() {
+    mockWordRepository = MockWordRepository();
+    addWordCubit = AddWordCubit(mockWordRepository);
+  });
+
+  group("AddWordCubit test", () {
+    Exception tex = Exception();
+    Word word = const Word(
+        id: 0, englishWord: "englishWord", turkishWord: "turkishWord");
 
     test("=>addWord test passed", () async {
       List<Word> oldWords = await addWordCubit.repository.getWords();
@@ -31,6 +30,20 @@ void main() {
 
       expect(oldWords.length, length + 1);
     });
+
+    blocTest(
+      "emits [AddWordStatus.succes] when addWord is called succesfully",
+      setUp: () {
+        when(() => mockWordRepository.add(word)).thenThrow(tex);
+      },
+      build: () => addWordCubit,
+      act: (bloc) => addWordCubit.addWord(word),
+      expect: () =>
+          [AddWordState(status: AddWordStatus.failed, exception: tex)],
+      verify: (bloc) {
+        verify(() => mockWordRepository.add(word)).called(1);
+      },
+    );
 
     tearDown(() {
       addWordCubit.close();
