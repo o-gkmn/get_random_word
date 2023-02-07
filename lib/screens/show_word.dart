@@ -220,6 +220,28 @@ class NavigateListWord extends StatelessWidget {
   }
 }
 
+class NavigateSettings extends StatelessWidget {
+  const NavigateSettings({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      alignment: Alignment.center,
+      child: ElevatedButton.icon(
+        label: Text(
+          "Ayarlar",
+          style: TextStyle(color: Theme.of(context).colorScheme.onSurface),
+        ),
+        icon: Icon(
+          Icons.settings,
+          color: Theme.of(context).colorScheme.onPrimary,
+        ),
+        onPressed: () => Navigator.pushNamed(context, settings),
+      ),
+    );
+  }
+}
+
 class PopupMenu extends StatefulWidget {
   const PopupMenu({super.key});
 
@@ -275,6 +297,10 @@ class _PopupMenuState extends State<PopupMenu>
           PopupMenuItem(
             padding: const EdgeInsets.all(0.0),
             child: const NavigateAddWord().build(context),
+          ),
+          const PopupMenuItem(
+            padding: EdgeInsets.all(0.0),
+            child: NavigateSettings(),
           ),
         ];
       },

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get_random_word/screens/add_word.dart';
 import 'package:get_random_word/screens/list_word.dart';
+import 'package:get_random_word/screens/settings.dart';
 import 'package:get_random_word/screens/show_word.dart';
 import 'package:get_random_word/screens/update_word.dart';
 import 'package:word_repository/word_repository.dart';
@@ -16,6 +17,8 @@ class PageRouter {
         return MaterialPageRoute(builder: (context) => const AddWord());
       case "/update":
         return MaterialPageRoute(builder: (context) => UpdateScreen(word: settings.arguments as Word));
+      case "/settings":
+        return MaterialPageRoute(builder: (context) => const Settings());
       default:
         return MaterialPageRoute(
             builder: (context) => const Scaffold(
