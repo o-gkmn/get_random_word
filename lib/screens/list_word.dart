@@ -14,7 +14,10 @@ class ListWord extends StatelessWidget {
           ListWordCubit(RepositoryProvider.of(context))..initialListWord(),
       child: Scaffold(
         appBar: AppBar(
-          title: const Text("Kelime Listesi"),
+          title: Text(
+            "Kelime Listesi",
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
         ),
         body: const ListWordBody(),
       ),
@@ -45,15 +48,21 @@ class ListWordBody extends StatelessWidget {
                 itemCount: state.words.length,
                 itemBuilder: (BuildContext context, int index) {
                   return Card(
-                    color: Theme.of(context).colorScheme.primary,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     margin: const EdgeInsets.only(
                         bottom: 3, left: 3.0, right: 3.0, top: 7),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15.0),
                     ),
                     child: ListTile(
-                      title: Text(state.words[index].englishWord),
-                      subtitle: Text(state.words[index].turkishWord),
+                      title: Text(
+                        state.words[index].englishWord,
+                        style: Theme.of(context).textTheme.titleMedium,
+                      ),
+                      subtitle: Text(
+                        state.words[index].turkishWord,
+                        style: Theme.of(context).textTheme.titleSmall,
+                      ),
                       onTap: () => Navigator.pushReplacementNamed(
                         context,
                         updateWord,
@@ -65,9 +74,10 @@ class ListWordBody extends StatelessWidget {
               ),
             );
           case ListStatus.empty:
-            return const Center(
+            return Center(
               child: Text(
                 "Listeniz bomboş.\n\nBiraz kelime eklemeye ne dersin?",
+                style: Theme.of(context).textTheme.bodyMedium,
                 textAlign: TextAlign.center,
               ),
             );

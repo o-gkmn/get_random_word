@@ -16,7 +16,10 @@ class AddWord extends StatelessWidget {
       create: (context) => AddWordCubit(RepositoryProvider.of(context)),
       child: Scaffold(
         appBar: AppBar(
-          title: const Text("Kelime Ekle"),
+          title: Text(
+            "Kelime Ekle",
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
         ),
         body: BlocListener<AddWordCubit, AddWordState>(
           listener: (context, state) {
@@ -76,48 +79,7 @@ class EnglishWordField extends StatelessWidget with AddWordValidateMixin {
       width: MediaQuery.of(context).size.width - 50,
       child: TextFormField(
         validator: nullCheck,
-        style: TextStyle(color: Theme.of(context).colorScheme.onBackground),
-        decoration: InputDecoration(
-          enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10.0),
-              borderSide: BorderSide(
-                  color: Theme.of(context).colorScheme.secondary, width: 2.5)),
-          errorBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10.0),
-              borderSide: BorderSide(
-                  color: Theme.of(context).colorScheme.error, width: 2.5)),
-          disabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10.0),
-              borderSide: BorderSide(
-                  color: Theme.of(context).colorScheme.onBackground,
-                  width: 2.5)),
-          focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10.0),
-              borderSide: BorderSide(
-                  color: Theme.of(context).colorScheme.secondary, width: 2.5)),
-          labelText: "İngilizce kelime",
-          hintText: "Buraya yazın",
-          labelStyle:
-              TextStyle(color: Theme.of(context).colorScheme.onBackground),
-        ),
-        onSaved: (String? value) {
-          word = word.copyWith(englishWord: value!);
-        },
-      ),
-    );
-  }
-}
-
-class TurkishWordField extends StatelessWidget with AddWordValidateMixin {
-  const TurkishWordField({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      width: MediaQuery.of(context).size.width - 50,
-      child: TextFormField(
-        validator: nullCheck,
-        style: TextStyle(color: Theme.of(context).colorScheme.onBackground),
+        style: Theme.of(context).textTheme.labelMedium,
         decoration: InputDecoration(
             enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.0),
@@ -138,10 +100,54 @@ class TurkishWordField extends StatelessWidget with AddWordValidateMixin {
                 borderSide: BorderSide(
                     color: Theme.of(context).colorScheme.secondary,
                     width: 2.5)),
-            labelText: "Türkçe kelime",
+            labelText: "İngilizce kelime",
+            labelStyle: Theme.of(context).textTheme.labelMedium,
             hintText: "Buraya yazın",
-            labelStyle:
-                TextStyle(color: Theme.of(context).colorScheme.onBackground)),
+            hintStyle: Theme.of(context).textTheme.labelMedium
+            ),
+        onSaved: (String? value) {
+          word = word.copyWith(englishWord: value!);
+        },
+      ),
+    );
+  }
+}
+
+class TurkishWordField extends StatelessWidget with AddWordValidateMixin {
+  const TurkishWordField({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: MediaQuery.of(context).size.width - 50,
+      child: TextFormField(
+        validator: nullCheck,
+        style: Theme.of(context).textTheme.labelMedium,
+        decoration: InputDecoration(
+          enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10.0),
+              borderSide: BorderSide(
+                  color: Theme.of(context).colorScheme.secondary, width: 2.5)),
+          errorBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10.0),
+              borderSide: BorderSide(
+                  color: Theme.of(context).colorScheme.error, width: 2.5)),
+          disabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10.0),
+              borderSide: BorderSide(
+                  color: Theme.of(context).colorScheme.onBackground,
+                  width: 2.5)),
+          focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10.0),
+              borderSide: BorderSide(
+                  color: Theme.of(context).colorScheme.secondary, width: 2.5)),
+          labelText: "Türkçe kelime",
+          labelStyle: Theme.of(context).textTheme.labelMedium,
+          hintText: "Buraya yazın",
+          hintStyle: Theme.of(context).textTheme.labelMedium,
+          // labelStyle:
+          //     TextStyle(color: Theme.of(context).colorScheme.onBackground),
+        ),
         onSaved: (String? value) {
           word = word.copyWith(turkishWord: value!);
         },
@@ -167,8 +173,7 @@ class SaveButton extends StatelessWidget {
             formKey.currentState!.reset();
           }
         },
-        child: Text("Kaydet",
-            style: TextStyle(color: Theme.of(context).colorScheme.onSurface)),
+        child: Text("Kaydet", style: Theme.of(context).textTheme.displayMedium),
       ),
     );
   }

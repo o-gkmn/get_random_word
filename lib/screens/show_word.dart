@@ -27,7 +27,10 @@ class ShowWordView extends StatelessWidget {
       appBar: AppBar(
         elevation: 20.0,
         shadowColor: Colors.black,
-        title: const Text("Random Word"),
+        title: Text(
+          "Random Word",
+          style: Theme.of(context).textTheme.headlineMedium,
+        ),
         centerTitle: true,
       ),
       floatingActionButton: const PopupMenu(),
@@ -113,10 +116,7 @@ class EnglishWordButton extends StatelessWidget {
             ),
             child: Text(
               state.englishWord,
-              style: const TextStyle(
-                fontSize: 20,
-                fontFamily: "Times New Roman",
-              ),
+              style: Theme.of(context).textTheme.displayMedium,
             ),
           ),
         );
@@ -137,7 +137,7 @@ class ShowTranslateButton extends StatelessWidget {
             context.read<ShowWordCubit>().emitOpenTurkishWord();
           },
           style: TextButton.styleFrom(
-            foregroundColor: Theme.of(context).scaffoldBackgroundColor,
+            //foregroundColor: Theme.of(context).scaffoldBackgroundColor,
             elevation: 0.0,
           ),
           child: Container(
@@ -162,10 +162,7 @@ class ShowTranslateButton extends StatelessWidget {
             child: Text(
               state.turkishWord,
               textWidthBasis: TextWidthBasis.longestLine,
-              style: const TextStyle(
-                fontSize: 20,
-                fontFamily: "Times New Roman",
-              ),
+              style: Theme.of(context).textTheme.displayMedium,
             ),
           ),
         );
@@ -184,11 +181,11 @@ class NavigateAddWord extends StatelessWidget {
       child: ElevatedButton.icon(
         label: Text(
           "Kelime Ekle",
-          style: TextStyle(color: Theme.of(context).colorScheme.onSurface),
+          style: Theme.of(context).textTheme.labelMedium,
         ),
         icon: Icon(
           Icons.add,
-          color: Theme.of(context).colorScheme.onPrimary,
+          color: Theme.of(context).colorScheme.onSurface,
         ),
         onPressed: () => Navigator.pushNamed(context, addWord).then(
           (value) => context.read<ShowWordCubit>().initialRandomWordList(),
@@ -208,11 +205,11 @@ class NavigateListWord extends StatelessWidget {
       child: ElevatedButton.icon(
         label: Text(
           "Kelime Listesi",
-          style: TextStyle(color: Theme.of(context).colorScheme.onSurface),
+          style: Theme.of(context).textTheme.labelMedium,
         ),
         icon: Icon(
           Icons.list_alt_outlined,
-          color: Theme.of(context).colorScheme.onPrimary,
+          color: Theme.of(context).colorScheme.onSurface,
         ),
         onPressed: () => Navigator.pushNamed(context, listWord),
       ),
@@ -226,15 +223,15 @@ class NavigateSettings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      alignment: Alignment.center,
+      alignment: Alignment.centerRight,
       child: ElevatedButton.icon(
         label: Text(
           "Ayarlar",
-          style: TextStyle(color: Theme.of(context).colorScheme.onSurface),
+          style: Theme.of(context).textTheme.labelMedium,
         ),
         icon: Icon(
           Icons.settings,
-          color: Theme.of(context).colorScheme.onPrimary,
+          color: Theme.of(context).colorScheme.onSurface,
         ),
         onPressed: () => Navigator.pushNamed(context, settings),
       ),
@@ -254,6 +251,8 @@ class PopupMenu extends StatefulWidget {
 class _PopupMenuState extends State<PopupMenu>
     with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
+  final double _popupMenuItemCount = 3;
+  final double _popupMenuItemHeight = 50;
 
   @override
   void initState() {
@@ -287,20 +286,23 @@ class _PopupMenuState extends State<PopupMenu>
       onCanceled: _reverseAnimation,
       color: const Color(0x00000000),
       elevation: 0.0,
-      offset: const Offset(0, -110),
+      offset: Offset(0, -(_popupMenuItemCount * _popupMenuItemHeight + 10)),
       itemBuilder: (_) {
         return [
-          const PopupMenuItem(
-            padding: EdgeInsets.all(0.0),
-            child: NavigateListWord(),
+          PopupMenuItem(
+            padding: const EdgeInsets.all(0.0),
+            height: _popupMenuItemHeight,
+            child: const NavigateListWord(),
           ),
           PopupMenuItem(
             padding: const EdgeInsets.all(0.0),
+            height: _popupMenuItemHeight,
             child: const NavigateAddWord().build(context),
           ),
-          const PopupMenuItem(
-            padding: EdgeInsets.all(0.0),
-            child: NavigateSettings(),
+          PopupMenuItem(
+            padding: const EdgeInsets.all(0.0),
+            height: _popupMenuItemHeight,
+            child: const NavigateSettings(),
           ),
         ];
       },
@@ -309,9 +311,11 @@ class _PopupMenuState extends State<PopupMenu>
         width: 56.0,
         height: 56.0,
         decoration: BoxDecoration(
-          border: Border.all(color: Theme.of(context).colorScheme.primary),
+          border: Border.all(
+            color: Theme.of(context).colorScheme.surface,
+          ),
           borderRadius: BorderRadius.circular(15.0),
-          color: Theme.of(context).colorScheme.primary,
+          color: Theme.of(context).colorScheme.surface,
           boxShadow: [
             BoxShadow(
               color: Theme.of(context).colorScheme.onBackground,

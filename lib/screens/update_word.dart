@@ -21,7 +21,10 @@ class UpdateScreen extends StatelessWidget {
           UpdateWordCubit(RepositoryProvider.of(context), word),
       child: Scaffold(
         appBar: AppBar(
-          title: const Text("Güncelle"),
+          title: Text(
+            "Güncelle",
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
         ),
         body: BlocListener<UpdateWordCubit, UpdateWordState>(
             listener: (context, state) {
@@ -90,13 +93,33 @@ class EnglishWordField extends StatelessWidget with AddWordValidateMixin {
           width: MediaQuery.of(context).size.width - 50,
           child: TextFormField(
             validator: nullCheck,
-            style: TextStyle(color: Theme.of(context).colorScheme.onBackground),
+            style: Theme.of(context).textTheme.labelMedium,
             initialValue: state.word.englishWord,
             decoration: InputDecoration(
+              enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                  borderSide: BorderSide(
+                      color: Theme.of(context).colorScheme.secondary,
+                      width: 2.5)),
+              errorBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                  borderSide: BorderSide(
+                      color: Theme.of(context).colorScheme.error, width: 2.5)),
+              disabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                  borderSide: BorderSide(
+                      color: Theme.of(context).colorScheme.onBackground,
+                      width: 2.5)),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10.0),
+                borderSide: BorderSide(
+                  color: Theme.of(context).colorScheme.secondary,
+                  width: 2.5,
+                ),
+              ),
               labelText: "İngilizce kelime",
               hintText: state.word.englishWord,
-              labelStyle:
-                  TextStyle(color: Theme.of(context).colorScheme.onBackground),
+              labelStyle: Theme.of(context).textTheme.labelMedium,
             ),
             onSaved: (String? value) {
               englishWord = value!;
@@ -119,14 +142,34 @@ class TurkishWordField extends StatelessWidget with AddWordValidateMixin {
           width: MediaQuery.of(context).size.width - 50,
           child: TextFormField(
             validator: nullCheck,
-            style: TextStyle(color: Theme.of(context).colorScheme.onBackground),
+            style: Theme.of(context).textTheme.labelMedium,
             initialValue: state.word.turkishWord,
             decoration: InputDecoration(
-              labelText: "Türkçe kelime",
-              hintText: state.word.turkishWord,
-              labelStyle:
-                  TextStyle(color: Theme.of(context).colorScheme.onBackground),
-            ),
+                enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                    borderSide: BorderSide(
+                        color: Theme.of(context).colorScheme.secondary,
+                        width: 2.5)),
+                errorBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                    borderSide: BorderSide(
+                        color: Theme.of(context).colorScheme.error,
+                        width: 2.5)),
+                disabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                    borderSide: BorderSide(
+                        color: Theme.of(context).colorScheme.onBackground,
+                        width: 2.5)),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                  borderSide: BorderSide(
+                    color: Theme.of(context).colorScheme.secondary,
+                    width: 2.5,
+                  ),
+                ),
+                labelText: "Türkçe kelime",
+                hintText: state.word.turkishWord,
+                labelStyle: Theme.of(context).textTheme.labelMedium),
             onSaved: (String? value) {
               turkishWord = value!;
             },
@@ -159,7 +202,7 @@ class SaveButton extends StatelessWidget {
             },
             child: Text(
               "Güncelle",
-              style: TextStyle(color: Theme.of(context).colorScheme.onSurface),
+              style: Theme.of(context).textTheme.displayMedium,
             ),
           ),
         );
@@ -182,10 +225,8 @@ class DeleteButton extends StatelessWidget {
               context.read<UpdateWordCubit>().deleteWord(state.word.id);
               Navigator.pushReplacementNamed(context, listWord);
             },
-            child: Text(
-              "Sil",
-              style: TextStyle(color: Theme.of(context).colorScheme.onSurface),
-            )),
+            child:
+                Text("Sil", style: Theme.of(context).textTheme.displayMedium)),
       );
     });
   }
