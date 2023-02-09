@@ -26,7 +26,7 @@ class ShowWordView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 20.0,
-        shadowColor: Colors.black,
+        shadowColor: Theme.of(context).colorScheme.shadow,
         title: Text(
           "Random Word",
           style: Theme.of(context).textTheme.headlineMedium,
@@ -106,10 +106,10 @@ class EnglishWordButton extends StatelessWidget {
                 width: 10,
               ),
               borderRadius: BorderRadius.circular(15.0),
-              boxShadow: const [
+              boxShadow: [
                 BoxShadow(
-                  color: Colors.grey,
-                  offset: Offset(0.0, 1.0), //(x,y)
+                  color: Theme.of(context).colorScheme.shadow,
+                  offset: const Offset(0.0, 1.0), //(x,y)
                   blurRadius: 6.0,
                 ),
               ],
@@ -151,10 +151,10 @@ class ShowTranslateButton extends StatelessWidget {
                 width: 10,
               ),
               borderRadius: BorderRadius.circular(15.0),
-              boxShadow: const [
+              boxShadow: [
                 BoxShadow(
-                  color: Colors.grey,
-                  offset: Offset(0.0, 1.0), //(x,y)
+                  color: Theme.of(context).colorScheme.shadow,
+                  offset: const Offset(0.0, 1.0), //(x,y)
                   blurRadius: 6.0,
                 ),
               ],
@@ -318,7 +318,7 @@ class _PopupMenuState extends State<PopupMenu>
           color: Theme.of(context).colorScheme.surface,
           boxShadow: [
             BoxShadow(
-              color: Theme.of(context).colorScheme.onBackground,
+              color: Theme.of(context).colorScheme.shadow,
               offset: const Offset(0.0, 1.0),
               blurRadius: 8.0,
             ),
