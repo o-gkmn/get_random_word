@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_random_word/bloc/show_word_cubit/show_word_cubit.dart';
 import 'package:get_random_word/router/router_constants.dart';
+import 'package:get_random_word/widgets/custom_alert_dialog.dart';
 import 'package:word_repository/word_repository.dart';
 
 class ShowWord extends StatelessWidget {
@@ -54,15 +55,19 @@ class ShowWordDesign extends StatelessWidget {
       bloc: BlocProvider.of<ShowWordCubit>(context),
       listener: (context, state) {
         if (state.pageStatus == PageStatus.error) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(
-                state.exception.toString(),
-              ),
-              backgroundColor: Colors.red,
-            ),
-          );
+          // ScaffoldMessenger.of(context).showSnackBar(
+          //   SnackBar(
+          //     content: Text(
+          //       state.exception.toString(),
+          //     ),
+          //     backgroundColor: Colors.red,
+          //   ),
+          // );
+          showDialog(
+              context: context,
+              builder: (context) => CustomAlertDialog(alertText: state.exception.toString().substring(11)));
         }
+        context.read<ShowWordCubit>().initialRandomWordList();
       },
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
