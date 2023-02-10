@@ -33,7 +33,8 @@ class ShowWordCubit extends Cubit<ShowWordState> {
       emit(state.copyWith(
           pageStatus: PageStatus.error,
           exception:
-              Exception("Kelime listeniz boş. Lütfen önce kelime ekleyin")));
+              Exception(
+                "Kelime listeniz boş.\nLütfen önce kelime ekleyin")));
       return const Word.empty();
     }
     randomWord = words.elementAt(random.nextInt(words.length));
