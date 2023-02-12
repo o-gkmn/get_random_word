@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_random_word/bloc/theme_cubit/theme_cubit.dart';
-import 'package:get_random_word/theme/green_theme.dart';
+import 'package:get_random_word/theme/app_theme/green_theme.dart';
+import 'package:get_random_word/theme/app_theme/red_theme.dart';
 import 'package:theme_repository/theme_repository.dart';
 import 'package:word_repository/word_repository.dart';
 
@@ -49,8 +50,8 @@ class AppBody extends StatelessWidget {
     return BlocBuilder<ThemeCubit, ThemeState>(
       builder: (context, state) {
         return MaterialApp(
-          theme: GreenThemeData().greenLightThemeData,
-          darkTheme: GreenThemeData().greenDarkThemeData,
+          theme: RedTheme().lightTheme,
+          darkTheme: RedTheme().darkTheme,
           themeMode: state.themeMode,
           onGenerateRoute: PageRouter.generateRoute,
         );

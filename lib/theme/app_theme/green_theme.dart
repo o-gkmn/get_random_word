@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get_random_word/theme/app_theme/app_theme.dart';
 import 'package:get_random_word/theme/text_theme/text_theme.dart';
 
-class GreenThemeData {
-  GreenThemeData();
+class GreenTheme extends AppTheme{
+  GreenTheme();
 
-  ThemeData get greenLightThemeData {
+  @override
+  ThemeData get lightTheme {
     TextTheme primaryTextTheme =
         PrimaryTextTheme(isLight: true).primaryTextTheme;
 
@@ -31,7 +33,8 @@ class GreenThemeData {
     return greenTheme;
   }
 
-  ThemeData get greenDarkThemeData {
+  @override
+  ThemeData get darkTheme {
     TextTheme primaryTextTheme =
         PrimaryTextTheme(isLight: false).primaryTextTheme;
 
