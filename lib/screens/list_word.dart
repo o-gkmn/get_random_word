@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_random_word/bloc/list_word_cubit/list_word_cubit.dart';
 import 'package:get_random_word/router/router_constants.dart';
 import 'package:get_random_word/widgets/custom_alert_dialog.dart';
+import 'package:word_repository/word_repository.dart';
 
 class ListWord extends StatelessWidget {
   const ListWord({super.key});
@@ -11,7 +12,7 @@ class ListWord extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) =>
-          ListWordCubit(RepositoryProvider.of(context))..initialListWord(),
+          ListWordCubit(RepositoryProvider.of<WordRepository>(context))..initialListWord(),
       child: Scaffold(
         appBar: AppBar(
           title: Text(

@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_random_word/bloc/add_word_cubit/add_word_cubit.dart';
 import 'package:get_random_word/validator/add_word_validate.dart';
 import 'package:get_random_word/widgets/custom_alert_dialog.dart';
-import 'package:word_api/word_api.dart';
+import 'package:word_repository/word_repository.dart';
 
 Word word = const Word.empty();
 
@@ -13,7 +13,7 @@ class AddWord extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => AddWordCubit(RepositoryProvider.of(context)),
+      create: (context) => AddWordCubit(RepositoryProvider.of<WordRepository>(context)),
       child: Scaffold(
         appBar: AppBar(
           title: Text(
@@ -103,8 +103,7 @@ class EnglishWordField extends StatelessWidget with AddWordValidateMixin {
             labelText: "İngilizce kelime",
             labelStyle: Theme.of(context).textTheme.labelMedium,
             hintText: "Buraya yazın",
-            hintStyle: Theme.of(context).textTheme.labelMedium
-            ),
+            hintStyle: Theme.of(context).textTheme.labelMedium),
         onSaved: (String? value) {
           word = word.copyWith(englishWord: value!);
         },
@@ -162,19 +161,23 @@ class SaveButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: MediaQuery.of(context).size.width - 50,
-      child: ElevatedButton(
-        onPressed: () {
-          if (formKey.currentState != null &&
-              formKey.currentState!.validate()) {
-            formKey.currentState!.save();
-            context.read<AddWordCubit>().addWord(word);
-            formKey.currentState!.reset();
-          }
-        },
-        child: Text("Kaydet", style: Theme.of(context).textTheme.displayMedium),
-      ),
-    );
+    return BlocBuilder<AddWordCubit, AddWordState>(
+      builder: (context, state) {
+      return SizedBox(
+        width: MediaQuery.of(context).size.width - 50,
+        child: ElevatedButton(
+          onPressed: () {
+            if (formKey.currentState != null &&
+                formKey.currentState!.validate()) {
+              formKey.currentState!.save();
+              context.read<AddWordCubit>().addWord(word);
+              formKey.currentState!.reset();
+            }
+          },
+          child:
+              Text("Kaydet", style: Theme.of(context).textTheme.displayMedium),
+        ),
+      );
+    });
   }
 }

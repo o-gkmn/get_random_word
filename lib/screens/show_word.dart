@@ -65,7 +65,8 @@ class ShowWordDesign extends StatelessWidget {
           // );
           showDialog(
               context: context,
-              builder: (context) => CustomAlertDialog(alertText: state.exception.toString().substring(11)));
+              builder: (context) => CustomAlertDialog(
+                  alertText: state.exception.toString().substring(11)));
         }
         context.read<ShowWordCubit>().initialRandomWordList();
       },
