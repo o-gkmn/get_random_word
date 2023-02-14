@@ -5,13 +5,13 @@ import 'package:theme_repository/src/theme_persistence.dart';
 
 enum ColorTheme {green, red}
 
-class ColorThemeRepository extends ThemePersistence<ColorTheme>{
+class ThemeColorRepository extends ThemePersistence<ColorTheme>{
 
   final SharedPreferences _sharedPreferences;
   final String _kColorTheme = "__color_theme_key";
   final _controller = StreamController<ColorTheme>();
 
-  ColorThemeRepository({required SharedPreferences sharedPreferences}) : _sharedPreferences = sharedPreferences{
+  ThemeColorRepository({required SharedPreferences sharedPreferences}) : _sharedPreferences = sharedPreferences{
     _init();
   }
 

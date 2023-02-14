@@ -11,18 +11,22 @@ class App extends StatelessWidget {
   const App(
       {super.key,
       required WordRepository wordRepository,
-      required ThemeModeRepository themeRepository})
+      required ThemeModeRepository themeModeRepository,
+      required ThemeColorRepository themeColorRepository,})
       : _wordRepository = wordRepository,
-        _themeRepository = themeRepository;
+        _themeModeRepository = themeModeRepository,
+        _themeColorRepository = themeColorRepository;
 
   final WordRepository _wordRepository;
-  final ThemeModeRepository _themeRepository;
+  final ThemeModeRepository _themeModeRepository;
+  final ThemeColorRepository _themeColorRepository;
 
   @override
   Widget build(BuildContext context) {
     return MultiRepositoryProvider(providers: [
       RepositoryProvider.value(value: _wordRepository),
-      RepositoryProvider.value(value: _themeRepository),
+      RepositoryProvider.value(value: _themeModeRepository),
+      RepositoryProvider.value(value: _themeColorRepository)
     ], child: const AppView());
   }
 }
@@ -46,7 +50,7 @@ class AppBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<ThemeModeCubit, ThemeState>(
+    return BlocBuilder<ThemeModeCubit, ThemeModeState>(
       builder: (context, state) {
         return MaterialApp(
           theme: RedTheme().lightTheme,
