@@ -3,7 +3,7 @@ import 'package:get_random_word/theme/app_theme/app_theme.dart';
 import 'package:get_random_word/theme/text_theme/text_theme.dart';
 
 class GreenTheme extends AppTheme{
-  GreenTheme();
+  const GreenTheme();
 
   @override
   ThemeData get lightTheme {

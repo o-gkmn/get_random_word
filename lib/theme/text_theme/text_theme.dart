@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class PrimaryTextTheme {
   final bool isLight;
 
-  PrimaryTextTheme({required this.isLight});
+  const PrimaryTextTheme({required this.isLight});
 
   TextTheme get primaryTextTheme {
     TextTheme textTheme = TextTheme(
