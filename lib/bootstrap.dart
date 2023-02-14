@@ -7,6 +7,12 @@ import 'package:theme_repository/theme_repository.dart';
 
 void bootstrap(WordApi wordApi, SharedPreferences sharedPreferences) {
   final wordRepository = WordRepository(wordApi: wordApi);
-  final themeRepository = ThemeModeRepository(sharedPreferences: sharedPreferences);
-  runApp(App(wordRepository: wordRepository, themeRepository: themeRepository));
+  final themeModeRepository =
+      ThemeModeRepository(sharedPreferences: sharedPreferences);
+  final themeColorRepository =
+      ThemeColorRepository(sharedPreferences: sharedPreferences);
+  runApp(App(
+      wordRepository: wordRepository,
+      themeModeRepository: themeModeRepository,
+      themeColorRepository: themeColorRepository));
 }

@@ -6,14 +6,13 @@ import 'package:get_random_word/theme/theme.dart';
 import 'package:theme_repository/theme_repository.dart';
 import 'package:word_repository/word_repository.dart';
 
-
 class App extends StatelessWidget {
-  const App(
-      {super.key,
-      required WordRepository wordRepository,
-      required ThemeModeRepository themeModeRepository,
-      required ThemeColorRepository themeColorRepository,})
-      : _wordRepository = wordRepository,
+  const App({
+    super.key,
+    required WordRepository wordRepository,
+    required ThemeModeRepository themeModeRepository,
+    required ThemeColorRepository themeColorRepository,
+  })  : _wordRepository = wordRepository,
         _themeModeRepository = themeModeRepository,
         _themeColorRepository = themeColorRepository;
 
@@ -36,12 +35,19 @@ class AppView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
+    return MultiBlocProvider(providers: [
+      BlocProvider(
         create: (context) => ThemeModeCubit(
-              themeRepository:
-                  RepositoryProvider.of<ThemeModeRepository>(context),
-            )..getCurrentTheme(),
-        child: const AppBody());
+          themeModeRepository: RepositoryProvider.of<ThemeModeRepository>(context),
+        )..getCurrentThemeModel(),
+      ),
+      BlocProvider(
+        create: (context) => ThemeColorCubit(
+          themeColorRepository:
+              RepositoryProvider.of<ThemeColorRepository>(context),
+        )..getCurrentThemeColor(),
+      ),
+    ], child: const AppBody());
   }
 }
 
@@ -51,12 +57,16 @@ class AppBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<ThemeModeCubit, ThemeModeState>(
-      builder: (context, state) {
-        return MaterialApp(
-          theme: RedTheme().lightTheme,
-          darkTheme: RedTheme().darkTheme,
-          themeMode: state.themeMode,
-          onGenerateRoute: PageRouter.generateRoute,
+      builder: (context, themeModeState) {
+        return BlocBuilder<ThemeColorCubit, ThemeColorState>(
+          builder: (context, themeColorState) {
+            return MaterialApp(
+              theme: themeColorState.appTheme.lightTheme,
+              darkTheme: themeColorState.appTheme.darkTheme,
+              themeMode: themeModeState.themeMode,
+              onGenerateRoute: PageRouter.generateRoute,
+            );
+          },
         );
       },
     );

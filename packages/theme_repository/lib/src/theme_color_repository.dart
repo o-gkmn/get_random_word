@@ -8,7 +8,7 @@ enum ColorTheme {green, red}
 class ThemeColorRepository extends ThemePersistence<ColorTheme>{
 
   final SharedPreferences _sharedPreferences;
-  final String _kColorTheme = "__color_theme_key";
+  static const _kColorTheme = "__color_theme_key";
   final _controller = StreamController<ColorTheme>();
 
   ThemeColorRepository({required SharedPreferences sharedPreferences}) : _sharedPreferences = sharedPreferences{

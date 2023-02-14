@@ -11,8 +11,8 @@ class RedTheme extends AppTheme {
 
     ColorScheme colorScheme = const ColorScheme(
       brightness: Brightness.light,
-      primary: Color.fromARGB(255, 247, 50, 50),
-      onPrimary: Color.fromARGB(248, 251, 35, 35),
+      primary: Color.fromARGB(248, 206, 32, 32),
+      onPrimary: Color.fromARGB(255, 247, 50, 50),
       secondary: Color.fromARGB(255, 251, 99, 99),
       onSecondary: Color.fromARGB(248, 237, 84, 84),
       error: Color.fromARGB(255, 255, 17, 0),
@@ -52,4 +52,7 @@ class RedTheme extends AppTheme {
         colorScheme: colorScheme, textTheme: textTheme, useMaterial3: true);
     return theme;
   }
+
+  @override
+  String get name => "Kırmızı";
 }

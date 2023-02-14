@@ -36,12 +36,12 @@ class GreenTheme extends AppTheme{
   @override
   ThemeData get darkTheme {
     TextTheme primaryTextTheme =
-        PrimaryTextTheme(isLight: false).primaryTextTheme;
+        const PrimaryTextTheme(isLight: false).primaryTextTheme;
 
     ColorScheme colorScheme = const ColorScheme(
         brightness: Brightness.light,
         primary: Color.fromARGB(255, 88, 168, 76),
-        onPrimary: Color.fromARGB(197, 69, 197, 49),
+        onPrimary: Color.fromARGB(255, 69, 197, 49),
         secondary: Color.fromARGB(255, 35, 99, 25),
         onSecondary: Color.fromARGB(144, 135, 255, 117),
         error: Color.fromARGB(255, 255, 17, 0),
@@ -59,4 +59,7 @@ class GreenTheme extends AppTheme{
 
     return greenTheme;
   }
+
+  @override
+  String get name => "Yeşil";
 }

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_random_word/bloc/bloc.dart';
+import 'package:get_random_word/theme/theme.dart';
 import 'package:get_random_word/widgets/custom_alert_dialog.dart';
+import 'package:theme_repository/theme_repository.dart';
 
 class Settings extends StatelessWidget {
   const Settings({super.key});
@@ -51,7 +53,7 @@ class _SettingsView extends StatelessWidget {
             case SettingsStatus.loaded:
               return const Padding(
                 padding: EdgeInsets.all(12.0),
-                child: _ThemeBody(),
+                child: _SettingsBody(),
               );
             case SettingsStatus.initial:
             case SettingsStatus.loading:
@@ -64,27 +66,27 @@ class _SettingsView extends StatelessWidget {
   }
 }
 
-class _ThemeBody extends StatelessWidget {
-  const _ThemeBody();
+class _SettingsBody extends StatelessWidget {
+  const _SettingsBody();
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: const [_BrightnessTheme()],
+      children: const [_ThemeModeSetting(), _ThemeColorSettings()],
     );
   }
 }
 
-class _BrightnessTheme extends StatefulWidget {
-  const _BrightnessTheme();
+class _ThemeModeSetting extends StatefulWidget {
+  const _ThemeModeSetting();
 
   @override
   State<StatefulWidget> createState() {
-    return _BrightnessThemeState();
+    return _ThemeModeSettingState();
   }
 }
 
-class _BrightnessThemeState extends State {
+class _ThemeModeSettingState extends State {
   bool isChecked = true;
 
   @override
@@ -110,17 +112,54 @@ class _BrightnessThemeState extends State {
         Text("Karanlık Tema", style: Theme.of(context).textTheme.titleMedium),
         const Spacer(flex: 1),
         Switch(
-          value: context.read<ThemeModeCubit>().state.themeMode == ThemeMode.dark,
-          activeColor: const Color.fromARGB(197, 69, 197, 49),
-          activeTrackColor: const Color.fromARGB(255, 92, 255, 67),
-          inactiveThumbColor: const Color.fromARGB(255, 92, 255, 67),
-          inactiveTrackColor: const Color.fromARGB(197, 69, 197, 49),
+          value:
+              context.read<ThemeModeCubit>().state.themeMode == ThemeMode.dark,
+          activeColor: Theme.of(context).colorScheme.primary,
+          activeTrackColor: Theme.of(context).colorScheme.onPrimary,
+          inactiveThumbColor: Theme.of(context).colorScheme.onPrimary,
+          inactiveTrackColor: Theme.of(context).colorScheme.primary,
           thumbIcon: thumbIcon,
           onChanged: (value) {
             context.read<ThemeModeCubit>().switchTheme();
           },
         )
       ],
+    );
+  }
+}
+
+class _ThemeColorSettings extends StatelessWidget {
+  const _ThemeColorSettings();
+
+  @override
+  Widget build(BuildContext context) {
+    return BlocBuilder<ThemeColorCubit, ThemeColorState>(
+      builder: (context, state) {
+        return Row(
+          children: [
+            Text("Tema Rengi", style: Theme.of(context).textTheme.titleMedium,),
+            const Spacer(flex: 1),
+            DropdownButton(
+              items: const [
+                DropdownMenuItem(
+                    value: ColorTheme.green, child: Text("Yeşil")),
+                DropdownMenuItem(
+                    value: ColorTheme.red, child: Text("Kırmızı"))
+              ],
+              value: state.colorTheme,
+              dropdownColor: Theme.of(context).colorScheme.surface,
+              underline: const Divider(height: 0),
+              alignment: Alignment.centerRight,
+              elevation: 15,
+              onChanged: (value) {
+                if(value is ColorTheme){
+                  context.read<ThemeColorCubit>().switchTheme(value);
+                }
+              },
+            )
+          ],
+        );
+      },
     );
   }
 }
