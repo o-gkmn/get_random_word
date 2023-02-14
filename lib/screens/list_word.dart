@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:get_random_word/bloc/list_word_cubit/list_word_cubit.dart';
-import 'package:get_random_word/router/router_constants.dart';
+import 'package:get_random_word/bloc/bloc.dart';
+import 'package:get_random_word/router/router.dart';
 import 'package:get_random_word/widgets/custom_alert_dialog.dart';
 import 'package:word_repository/word_repository.dart';
 
@@ -20,14 +20,14 @@ class ListWord extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineMedium,
           ),
         ),
-        body: const ListWordBody(),
+        body: const _ListWordBody(),
       ),
     );
   }
 }
 
-class ListWordBody extends StatelessWidget {
-  const ListWordBody({super.key});
+class _ListWordBody extends StatelessWidget {
+  const _ListWordBody();
 
   @override
   Widget build(BuildContext context) {

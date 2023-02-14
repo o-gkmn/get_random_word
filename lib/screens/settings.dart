@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:get_random_word/bloc/settings_cubit/settings_cubit.dart';
+import 'package:get_random_word/bloc/bloc.dart';
 import 'package:get_random_word/widgets/custom_alert_dialog.dart';
-
-import '../bloc/theme_cubit/theme_cubit.dart';
 
 class Settings extends StatelessWidget {
   const Settings({super.key});
@@ -18,12 +16,12 @@ class Settings extends StatelessWidget {
       BlocProvider(
         create: (context) => SettingsCubit(),
       ),
-    ], child: const SettingsView());
+    ], child: const _SettingsView());
   }
 }
 
-class SettingsView extends StatelessWidget {
-  const SettingsView({super.key});
+class _SettingsView extends StatelessWidget {
+  const _SettingsView();
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +51,7 @@ class SettingsView extends StatelessWidget {
             case SettingsStatus.loaded:
               return const Padding(
                 padding: EdgeInsets.all(12.0),
-                child: ThemeBody(),
+                child: _ThemeBody(),
               );
             case SettingsStatus.initial:
             case SettingsStatus.loading:
@@ -66,27 +64,27 @@ class SettingsView extends StatelessWidget {
   }
 }
 
-class ThemeBody extends StatelessWidget {
-  const ThemeBody({super.key});
+class _ThemeBody extends StatelessWidget {
+  const _ThemeBody();
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: const [BrightnessTheme()],
+      children: const [_BrightnessTheme()],
     );
   }
 }
 
-class BrightnessTheme extends StatefulWidget {
-  const BrightnessTheme({super.key});
+class _BrightnessTheme extends StatefulWidget {
+  const _BrightnessTheme();
 
   @override
   State<StatefulWidget> createState() {
-    return BrightnessThemeState();
+    return _BrightnessThemeState();
   }
 }
 
-class BrightnessThemeState extends State {
+class _BrightnessThemeState extends State {
   bool isChecked = true;
 
   @override

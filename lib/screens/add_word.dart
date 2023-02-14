@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:get_random_word/bloc/add_word_cubit/add_word_cubit.dart';
+import 'package:get_random_word/bloc/bloc.dart';
 import 'package:get_random_word/validator/add_word_validate.dart';
 import 'package:get_random_word/widgets/custom_alert_dialog.dart';
 import 'package:word_repository/word_repository.dart';
@@ -32,17 +32,17 @@ class AddWord extends StatelessWidget {
               );
             }
           },
-          child: AddWordBody(),
+          child: _AddWordBody(),
         ),
       ),
     );
   }
 }
 
-class AddWordBody extends StatelessWidget {
+class _AddWordBody extends StatelessWidget {
   final formKey = GlobalKey<FormState>();
 
-  AddWordBody({super.key});
+  _AddWordBody();
 
   @override
   Widget build(BuildContext context) {
@@ -56,11 +56,11 @@ class AddWordBody extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const Spacer(flex: 3),
-              const EnglishWordField(),
+              const _EnglishWordField(),
               const Spacer(flex: 1),
-              const TurkishWordField(),
+              const _TurkishWordField(),
               const Spacer(flex: 2),
-              SaveButton(formKey: formKey),
+              _SaveButton(formKey: formKey),
               const Spacer(flex: 3),
             ],
           ),
@@ -70,8 +70,8 @@ class AddWordBody extends StatelessWidget {
   }
 }
 
-class EnglishWordField extends StatelessWidget with AddWordValidateMixin {
-  const EnglishWordField({super.key});
+class _EnglishWordField extends StatelessWidget with AddWordValidateMixin {
+  const _EnglishWordField();
 
   @override
   Widget build(BuildContext context) {
@@ -112,8 +112,8 @@ class EnglishWordField extends StatelessWidget with AddWordValidateMixin {
   }
 }
 
-class TurkishWordField extends StatelessWidget with AddWordValidateMixin {
-  const TurkishWordField({super.key});
+class _TurkishWordField extends StatelessWidget with AddWordValidateMixin {
+  const _TurkishWordField();
 
   @override
   Widget build(BuildContext context) {
@@ -155,9 +155,9 @@ class TurkishWordField extends StatelessWidget with AddWordValidateMixin {
   }
 }
 
-class SaveButton extends StatelessWidget {
+class _SaveButton extends StatelessWidget {
   final GlobalKey<FormState> formKey;
-  const SaveButton({super.key, required this.formKey});
+  const _SaveButton({required this.formKey});
 
   @override
   Widget build(BuildContext context) {

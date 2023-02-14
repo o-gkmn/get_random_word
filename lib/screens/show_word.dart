@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:get_random_word/bloc/show_word_cubit/show_word_cubit.dart';
-import 'package:get_random_word/router/router_constants.dart';
+import 'package:get_random_word/bloc/bloc.dart';
+import 'package:get_random_word/router/router.dart';
 import 'package:get_random_word/widgets/custom_alert_dialog.dart';
 import 'package:word_repository/word_repository.dart';
 
@@ -34,7 +34,7 @@ class ShowWordView extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      floatingActionButton: const PopupMenu(),
+      floatingActionButton: const _PopupMenu(),
       body: Container(
         padding: const EdgeInsets.all(15.0),
         child: const Align(
@@ -76,8 +76,8 @@ class ShowWordDesign extends StatelessWidget {
         children: <Widget>[
           Column(
             children: const [
-              EnglishWordButton(),
-              ShowTranslateButton(),
+              _EnglishWordButton(),
+              _ShowTranslateButton(),
             ],
           ),
         ],
@@ -86,8 +86,8 @@ class ShowWordDesign extends StatelessWidget {
   }
 }
 
-class EnglishWordButton extends StatelessWidget {
-  const EnglishWordButton({super.key});
+class _EnglishWordButton extends StatelessWidget {
+  const _EnglishWordButton();
 
   @override
   Widget build(BuildContext context) {
@@ -131,8 +131,8 @@ class EnglishWordButton extends StatelessWidget {
   }
 }
 
-class ShowTranslateButton extends StatelessWidget {
-  const ShowTranslateButton({super.key});
+class _ShowTranslateButton extends StatelessWidget {
+  const _ShowTranslateButton();
 
   @override
   Widget build(BuildContext context) {
@@ -177,8 +177,8 @@ class ShowTranslateButton extends StatelessWidget {
   }
 }
 
-class NavigateAddWord extends StatelessWidget {
-  const NavigateAddWord({super.key});
+class _NavigateAddWord extends StatelessWidget {
+  const _NavigateAddWord();
 
   @override
   Widget build(BuildContext context) {
@@ -201,8 +201,8 @@ class NavigateAddWord extends StatelessWidget {
   }
 }
 
-class NavigateListWord extends StatelessWidget {
-  const NavigateListWord({super.key});
+class _NavigateListWord extends StatelessWidget {
+  const _NavigateListWord();
 
   @override
   Widget build(BuildContext context) {
@@ -223,8 +223,8 @@ class NavigateListWord extends StatelessWidget {
   }
 }
 
-class NavigateSettings extends StatelessWidget {
-  const NavigateSettings({super.key});
+class _NavigateSettings extends StatelessWidget {
+  const _NavigateSettings();
 
   @override
   Widget build(BuildContext context) {
@@ -245,8 +245,8 @@ class NavigateSettings extends StatelessWidget {
   }
 }
 
-class PopupMenu extends StatefulWidget {
-  const PopupMenu({super.key});
+class _PopupMenu extends StatefulWidget {
+  const _PopupMenu();
 
   @override
   State<StatefulWidget> createState() {
@@ -254,7 +254,7 @@ class PopupMenu extends StatefulWidget {
   }
 }
 
-class _PopupMenuState extends State<PopupMenu>
+class _PopupMenuState extends State<_PopupMenu>
     with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
   final double _popupMenuItemCount = 3;
@@ -298,17 +298,17 @@ class _PopupMenuState extends State<PopupMenu>
           PopupMenuItem(
             padding: const EdgeInsets.all(0.0),
             height: _popupMenuItemHeight,
-            child: const NavigateListWord(),
+            child: const _NavigateListWord(),
           ),
           PopupMenuItem(
             padding: const EdgeInsets.all(0.0),
             height: _popupMenuItemHeight,
-            child: const NavigateAddWord().build(context),
+            child: const _NavigateAddWord().build(context),
           ),
           PopupMenuItem(
             padding: const EdgeInsets.all(0.0),
             height: _popupMenuItemHeight,
-            child: const NavigateSettings(),
+            child: const _NavigateSettings(),
           ),
         ];
       },

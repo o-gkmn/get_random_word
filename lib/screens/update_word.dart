@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:get_random_word/bloc/update_word_cubit/update_word_cubit.dart';
-import 'package:get_random_word/router/router_constants.dart';
+import 'package:get_random_word/bloc/bloc.dart';
+import 'package:get_random_word/router/router.dart';
 import 'package:get_random_word/validator/add_word_validate.dart';
 import 'package:get_random_word/widgets/custom_alert_dialog.dart';
 import 'package:word_repository/word_repository.dart';
@@ -44,14 +44,14 @@ class UpdateScreen extends StatelessWidget {
                 default:
               }
             },
-            child: UpdateScreenBody()),
+            child: _UpdateScreenBody()),
       ),
     );
   }
 }
 
-class UpdateScreenBody extends StatelessWidget {
-  UpdateScreenBody({super.key});
+class _UpdateScreenBody extends StatelessWidget {
+  _UpdateScreenBody();
 
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
@@ -65,14 +65,14 @@ class UpdateScreenBody extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const EnglishWordField(),
-            const TurkishWordField(),
+            const _EnglishWordField(),
+            const _TurkishWordField(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SaveButton(formKey: formKey),
-                const DeleteButton(),
+                _SaveButton(formKey: formKey),
+                const _DeleteButton(),
               ],
             ),
           ],
@@ -82,8 +82,8 @@ class UpdateScreenBody extends StatelessWidget {
   }
 }
 
-class EnglishWordField extends StatelessWidget with AddWordValidateMixin {
-  const EnglishWordField({super.key});
+class _EnglishWordField extends StatelessWidget with AddWordValidateMixin {
+  const _EnglishWordField();
 
   @override
   Widget build(BuildContext context) {
@@ -131,8 +131,8 @@ class EnglishWordField extends StatelessWidget with AddWordValidateMixin {
   }
 }
 
-class TurkishWordField extends StatelessWidget with AddWordValidateMixin {
-  const TurkishWordField({super.key});
+class _TurkishWordField extends StatelessWidget with AddWordValidateMixin {
+  const _TurkishWordField();
 
   @override
   Widget build(BuildContext context) {
@@ -180,9 +180,9 @@ class TurkishWordField extends StatelessWidget with AddWordValidateMixin {
   }
 }
 
-class SaveButton extends StatelessWidget {
+class _SaveButton extends StatelessWidget {
   final GlobalKey<FormState> formKey;
-  const SaveButton({super.key, required this.formKey});
+  const _SaveButton({required this.formKey});
 
   @override
   Widget build(BuildContext context) {
@@ -211,8 +211,8 @@ class SaveButton extends StatelessWidget {
   }
 }
 
-class DeleteButton extends StatelessWidget {
-  const DeleteButton({super.key});
+class _DeleteButton extends StatelessWidget {
+  const _DeleteButton();
 
   @override
   Widget build(BuildContext context) {
