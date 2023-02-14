@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:theme_repository/theme_persistence.dart';
+import 'package:theme_repository/src/theme_persistence.dart';
 
 enum ColorTheme {green, red}
 

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:get_random_word/bloc/theme_cubit/theme_cubit.dart';
-import 'package:get_random_word/theme/app_theme/red_theme.dart';
-import 'package:theme_repository/theme_mode_repository.dart';
+import 'package:get_random_word/bloc/bloc.dart';
+import 'package:get_random_word/router/router.dart';
+import 'package:get_random_word/theme/theme.dart';
+import 'package:theme_repository/theme_repository.dart';
 import 'package:word_repository/word_repository.dart';
 
-import '../router/page_router.dart';
 
 class App extends StatelessWidget {
   const App(

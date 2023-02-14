@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
-import 'package:theme_repository/theme_mode_repository.dart';
+import 'package:theme_repository/theme_repository.dart';
 
 part 'theme_state.dart';
 
