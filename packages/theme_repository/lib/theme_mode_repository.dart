@@ -4,22 +4,18 @@ import 'dart:async';
 
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'theme_persistence.dart';
+
 enum CustomTheme { light, dark }
 
-abstract class ThemePersistence {
-  Stream<CustomTheme> getTheme();
-  Future<void> saveTheme(CustomTheme theme);
-  void dispose();
-}
-
-class ThemeRepository extends ThemePersistence {
+class ThemeModeRepository extends ThemePersistence<CustomTheme> {
   final SharedPreferences _sharedPreferences;
 
   static const _kThemePersistenceKey = '__theme_persistence_key';
 
   final _controller = StreamController<CustomTheme>();
 
-  ThemeRepository({required SharedPreferences sharedPreferences})
+  ThemeModeRepository({required SharedPreferences sharedPreferences})
       : _sharedPreferences = sharedPreferences {
     _init();
   }
