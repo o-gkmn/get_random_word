@@ -67,8 +67,8 @@ class ShowWordDesign extends StatelessWidget {
               context: context,
               builder: (context) => CustomAlertDialog(
                   alertText: state.exception.toString().substring(11)));
-        }
         context.read<ShowWordCubit>().initialRandomWordList();
+        }
       },
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
