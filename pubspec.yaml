@@ -75,7 +75,9 @@ flutter_icons:
 # The following section is specific to Flutter packages.
 flutter:
   assets:
-    - assets/theme.json
+    - assets/data_source/the_100_words.json
+    - assets/data_source/the_500_words.json
+    - assets/data_source/the_1000_words.json
     - assets/dictionary.png
   fonts:
     - family: OpenSans
