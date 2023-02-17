@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_random_word/bloc/bloc.dart';
-import 'package:get_random_word/theme/theme.dart';
 import 'package:get_random_word/widgets/custom_alert_dialog.dart';
 import 'package:theme_repository/theme_repository.dart';
+import 'package:word_repository/word_repository.dart';
 
 class Settings extends StatelessWidget {
   const Settings({super.key});
@@ -16,7 +16,8 @@ class Settings extends StatelessWidget {
       //       themeRepository: RepositoryProvider.of<ThemeRepository>(context)),
       // ),
       BlocProvider(
-        create: (context) => SettingsCubit(),
+        create: (context) => SettingsCubit(
+            wordRepository: RepositoryProvider.of<WordRepository>(context)),
       ),
     ], child: const _SettingsView());
   }
@@ -72,7 +73,12 @@ class _SettingsBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: const [_ThemeModeSetting(), _ThemeColorSettings()],
+      children: const [
+        _ThemeModeSetting(),
+        _ThemeColorSettings(),
+        Divider(),
+        _InitialThe100Words()
+      ],
     );
   }
 }
@@ -137,14 +143,15 @@ class _ThemeColorSettings extends StatelessWidget {
       builder: (context, state) {
         return Row(
           children: [
-            Text("Tema Rengi", style: Theme.of(context).textTheme.titleMedium,),
+            Text(
+              "Tema Rengi",
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
             const Spacer(flex: 1),
             DropdownButton(
               items: const [
-                DropdownMenuItem(
-                    value: ColorTheme.green, child: Text("Yeşil")),
-                DropdownMenuItem(
-                    value: ColorTheme.red, child: Text("Kırmızı"))
+                DropdownMenuItem(value: ColorTheme.green, child: Text("Yeşil")),
+                DropdownMenuItem(value: ColorTheme.red, child: Text("Kırmızı"))
               ],
               value: state.colorTheme,
               dropdownColor: Theme.of(context).colorScheme.surface,
@@ -152,7 +159,7 @@ class _ThemeColorSettings extends StatelessWidget {
               alignment: Alignment.centerRight,
               elevation: 15,
               onChanged: (value) {
-                if(value is ColorTheme){
+                if (value is ColorTheme) {
                   context.read<ThemeColorCubit>().switchTheme(value);
                 }
               },
@@ -160,6 +167,32 @@ class _ThemeColorSettings extends StatelessWidget {
           ],
         );
       },
+    );
+  }
+}
+
+class _InitialThe100Words extends StatelessWidget {
+  const _InitialThe100Words();
+
+  @override
+  Widget build(BuildContext context) {
+    return BlocBuilder<SettingsCubit, SettingsState>(
+      builder: (context, state) {
+        return Row(
+          children: [
+            const Text("En çok kullanılan 100 kelime"),
+            const Spacer(),
+            Checkbox(
+              value: state.the100WordsCheckBoxValue,
+              onChanged: (value) {
+                if (value is bool) {
+                  context.read<SettingsCubit>().initThe100Words(value);
+                }
+              },
+            )
+          ],
+        );
+      }
     );
   }
 }

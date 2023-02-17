@@ -1,0 +1,5527 @@
+[
+    {
+        "turkishWord": "Abi",
+        "englishWord": "Older brother",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Abla",
+        "englishWord": "Older sister",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Acaba",
+        "englishWord": "I wonder",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Acı",
+        "englishWord": "Pain, bitter, spicy",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Açık",
+        "englishWord": "Open",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Acıkmak",
+        "englishWord": "To be hungry",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Acil",
+        "englishWord": "Emergency",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Açmak",
+        "englishWord": "To open",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ad",
+        "englishWord": "Name",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Adam",
+        "englishWord": "Man",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Adet",
+        "englishWord": "Piece, unit",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Adım",
+        "englishWord": "Step",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Adres",
+        "englishWord": "Address",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ağaç",
+        "englishWord": "Tree",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ağır",
+        "englishWord": "Heavy",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ağız",
+        "englishWord": "Mouth",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ağlamak",
+        "englishWord": "To cry",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Aile",
+        "englishWord": "Family",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Akıl",
+        "englishWord": "Mind",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Akıllı",
+        "englishWord": "Smart, clever",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Akmak",
+        "englishWord": "To flow",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Akşam",
+        "englishWord": "Evening",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Alan",
+        "englishWord": "Area",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Alışmak",
+        "englishWord": "To adjust",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Alışveriş yapmak",
+        "englishWord": "To go shopping",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Allah",
+        "englishWord": "God",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Almak",
+        "englishWord": "To take",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Altı",
+        "englishWord": "Six",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Altın",
+        "englishWord": "Gold",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Altmış",
+        "englishWord": "Sixty",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ama",
+        "englishWord": "But",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Amaç",
+        "englishWord": "Purpose",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Amca",
+        "englishWord": "Uncle (father's brother)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "An",
+        "englishWord": "Moment",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Anlam",
+        "englishWord": "Meaning",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Anlamak",
+        "englishWord": "To understand",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Anlaşılmak",
+        "englishWord": "To be understood",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Anlatmak",
+        "englishWord": "To explain",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Anne",
+        "englishWord": "Mother",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Apartman",
+        "englishWord": "Apartment building",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Araba",
+        "englishWord": "Car",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Araç",
+        "englishWord": "Tool, vehicle",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Aralık",
+        "englishWord": "December",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Aramak",
+        "englishWord": "To search for, to call (on the phone)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Araştırmak",
+        "englishWord": "To research",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Arı",
+        "englishWord": "Bee",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Arkadaş",
+        "englishWord": "Friend",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Armut",
+        "englishWord": "Pear",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Artık",
+        "englishWord": "Anymore (these days)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Artmak",
+        "englishWord": "To increase",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Asıl",
+        "englishWord": "Actual",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Aşırı",
+        "englishWord": "Extreme",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Aşk",
+        "englishWord": "Romantic love",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Asker",
+        "englishWord": "Soldier",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Asla",
+        "englishWord": "Never",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Aslında",
+        "englishWord": "Actually",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "At",
+        "englishWord": "Horse",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ateş",
+        "englishWord": "Fire",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Atlamak",
+        "englishWord": "To jump",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Atmak",
+        "englishWord": "To throw",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ay",
+        "englishWord": "Moon, month",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ayak",
+        "englishWord": "Foot",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ayakkabı",
+        "englishWord": "Shoe",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ayı",
+        "englishWord": "Bear",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ayırmak",
+        "englishWord": "To separate",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ayna",
+        "englishWord": "Mirror",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Aynı",
+        "englishWord": "Similar",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ayrı",
+        "englishWord": "Separate",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ayrılmak",
+        "englishWord": "To be separated",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Az",
+        "englishWord": "Little",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Baba",
+        "englishWord": "Dad",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bacak",
+        "englishWord": "Leg",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bağırmak",
+        "englishWord": "To shout",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bağlamak",
+        "englishWord": "To tie, to connect",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bahçe",
+        "englishWord": "Garden",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bakan",
+        "englishWord": "Minister (government)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bakış",
+        "englishWord": "View",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bakmak",
+        "englishWord": "To look",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Balık",
+        "englishWord": "Fish",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Banka",
+        "englishWord": "Bank",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bant",
+        "englishWord": "Tape, band, strip",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Banyo",
+        "englishWord": "Bathroom (with a shower or bath)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bardak",
+        "englishWord": "Glass (cup)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Barış",
+        "englishWord": "Peace (not at war)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Baş",
+        "englishWord": "Head",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Başarı",
+        "englishWord": "Success",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Basit",
+        "englishWord": "Basic, simple",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Başka",
+        "englishWord": "Other",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Başkan",
+        "englishWord": "President, chairman",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Baskı",
+        "englishWord": "Pressure",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Başlamak",
+        "englishWord": "To start",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Basmak",
+        "englishWord": "To step, to press",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Batı",
+        "englishWord": "West",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Batmak",
+        "englishWord": "To sink",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Battaniye",
+        "englishWord": "Blanket",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bayrak",
+        "englishWord": "Flag",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bayram",
+        "englishWord": "Holiday",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bazen",
+        "englishWord": "Sometimes",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bazı",
+        "englishWord": "Some",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bebek",
+        "englishWord": "Baby",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bedava",
+        "englishWord": "Free",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Beden",
+        "englishWord": "Body (or clothing size)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Beğenmek",
+        "englishWord": "To like",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bekâr",
+        "englishWord": "Single (not married)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Beklemek",
+        "englishWord": "To wait",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bel",
+        "englishWord": "Waist, lower back",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Belediye",
+        "englishWord": "Municipality",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Belge",
+        "englishWord": "Document",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Belki",
+        "englishWord": "Maybe",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Belli",
+        "englishWord": "Clear, obvious",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Benzemek",
+        "englishWord": "To look like",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Benzin",
+        "englishWord": "Gasoline",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Beraber",
+        "englishWord": "Together",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Beş",
+        "englishWord": "Five",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bey",
+        "englishWord": "Mr.",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Beyaz",
+        "englishWord": "White",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Beyin",
+        "englishWord": "Brain",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bez",
+        "englishWord": "Cloth (or diaper)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bıçak",
+        "englishWord": "Knife",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Biçim",
+        "englishWord": "Shape",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bilet",
+        "englishWord": "Ticket",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bilgi",
+        "englishWord": "Information",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bilgisayar",
+        "englishWord": "Computer",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bilim",
+        "englishWord": "Science",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bilmek",
+        "englishWord": "To know",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bin",
+        "englishWord": "Thousand",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bina",
+        "englishWord": "Building",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Binmek",
+        "englishWord": "To ride, to get on (a bus)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bir",
+        "englishWord": "One",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bırakmak",
+        "englishWord": "To leave something",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Biraz",
+        "englishWord": "A little",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Birçok",
+        "englishWord": "A lot",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Biri",
+        "englishWord": "Someone, one of them",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Birinci",
+        "englishWord": "First",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Birisi",
+        "englishWord": "Someone",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Birkaç",
+        "englishWord": "A few",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Birlikte",
+        "englishWord": "Together",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bitirmek",
+        "englishWord": "To finish (something)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bitki",
+        "englishWord": "Plant",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bitmek",
+        "englishWord": "To be finished",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Böcek",
+        "englishWord": "Bug",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Boğaz",
+        "englishWord": "Throat",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bölge",
+        "englishWord": "Region",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bölge",
+        "englishWord": "Region",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bölmek",
+        "englishWord": "To divide",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bölüm",
+        "englishWord": "Division, chapter",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Boru",
+        "englishWord": "Pipe",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Boş",
+        "englishWord": "Empty",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Boşaltmak",
+        "englishWord": "To empty (something)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Boşanmak",
+        "englishWord": "To get divorced",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Boy",
+        "englishWord": "Size",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Boyamak",
+        "englishWord": "To paint, to dye (something)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Boyun",
+        "englishWord": "Neck",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bozuk",
+        "englishWord": "Broken (stopped working)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bozulmak",
+        "englishWord": "To be broken (stop working)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bugün",
+        "englishWord": "Today",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bulmak",
+        "englishWord": "To find",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Buluşmak",
+        "englishWord": "To meet up with",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Burada",
+        "englishWord": "Here, at\/in this place",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Burası",
+        "englishWord": "This place",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Burun",
+        "englishWord": "Nose",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Bütün",
+        "englishWord": "All, entire",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Büyük",
+        "englishWord": "Big",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Büyümek",
+        "englishWord": "To grow (bigger)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çabuk",
+        "englishWord": "Quick",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Cadde",
+        "englishWord": "Street",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çağırmak",
+        "englishWord": "To invite, to call",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çalışmak",
+        "englishWord": "To work",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çalmak",
+        "englishWord": "To steal, to play (an instrument)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Cam",
+        "englishWord": "Glasses",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çamaşır",
+        "englishWord": "Laundry",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Cami",
+        "englishWord": "Mosque",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Can",
+        "englishWord": "Life, soul",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Canlı",
+        "englishWord": "Alive, live broadcast",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çanta",
+        "englishWord": "Bag (backpack, purse)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çarpmak",
+        "englishWord": "To crash",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çarşamba",
+        "englishWord": "Wednesday",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çatal",
+        "englishWord": "Fork",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çay",
+        "englishWord": "Tea",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çaydanlık",
+        "englishWord": "Teapot",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çekmek",
+        "englishWord": "To pull",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çeşit",
+        "englishWord": "Type, variety",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Cevap vermek",
+        "englishWord": "To answer",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çevirmek",
+        "englishWord": "To flip, to translate something",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çevre",
+        "englishWord": "Environment",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çeyrek",
+        "englishWord": "Quarter (25%)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ceza",
+        "englishWord": "Punishment",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çiçek",
+        "englishWord": "Flower",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ciddi",
+        "englishWord": "Serious",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çift",
+        "englishWord": "Double",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çiftçi",
+        "englishWord": "Farmer",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Cihaz",
+        "englishWord": "Electronic device",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çıkarmak",
+        "englishWord": "To take off, to remove",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çıkmak",
+        "englishWord": "To leave, climb",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çirkin",
+        "englishWord": "Ugly",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çizgi",
+        "englishWord": "Line, drawing",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çocuk",
+        "englishWord": "Child",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çok",
+        "englishWord": "Very, many",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çorap",
+        "englishWord": "Sock",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çözmek",
+        "englishWord": "To solve, to untie",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çözüm",
+        "englishWord": "Resolution",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Cuma",
+        "englishWord": "Friday",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Cumartesi",
+        "englishWord": "Saturday",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Cümle",
+        "englishWord": "Sentence",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Çünkü",
+        "englishWord": "Because",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dağ",
+        "englishWord": "Mountain",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Daha az",
+        "englishWord": "Less",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Daha çok",
+        "englishWord": "More",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Daire",
+        "englishWord": "Apartment, circle",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dakika",
+        "englishWord": "Minute",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Damla",
+        "englishWord": "Drop (of liquid)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dans etmek",
+        "englishWord": "To dance",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Davet etmek",
+        "englishWord": "To invite",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Davranış",
+        "englishWord": "behavior",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Davranmak",
+        "englishWord": "To behave (in a certain way)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dayanmak",
+        "englishWord": "To endure",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Defter",
+        "englishWord": "Notebook",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Değer",
+        "englishWord": "Value",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Değil",
+        "englishWord": "Not",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Değişmek",
+        "englishWord": "(For something) to change",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Değiştirmek",
+        "englishWord": "To change (something)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Delik",
+        "englishWord": "Hole",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Demek",
+        "englishWord": "To say, it means...",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Denemek",
+        "englishWord": "To try",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Denge",
+        "englishWord": "Balance",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Deniz",
+        "englishWord": "Sea",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Deprem",
+        "englishWord": "Earthquake",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Derece",
+        "englishWord": "Degrees (temperature)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Deri",
+        "englishWord": "Skin",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Derin",
+        "englishWord": "Deep",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ders",
+        "englishWord": "Class",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Destek",
+        "englishWord": "Support",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Devam etmek",
+        "englishWord": "To continue",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Devlet",
+        "englishWord": "Government",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Diğer",
+        "englishWord": "The other (one)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dik",
+        "englishWord": "Steep",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dikkat etmek",
+        "englishWord": "To be careful",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dil",
+        "englishWord": "Tongue (or language)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Din",
+        "englishWord": "Religion",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dinlemek",
+        "englishWord": "To listen",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dinlenmek",
+        "englishWord": "To rest",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dirilmek",
+        "englishWord": "To be resurrected",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Diş",
+        "englishWord": "Tooth",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Diz",
+        "englishWord": "Knee",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Doğal",
+        "englishWord": "Natural",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Doğal gaz",
+        "englishWord": "Natural Gas",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Doğmak",
+        "englishWord": "To be born",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Doğru",
+        "englishWord": "Right",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Doğu",
+        "englishWord": "East",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Doksan",
+        "englishWord": "Ninety",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Doktor",
+        "englishWord": "Doctor",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dokuz",
+        "englishWord": "Nine",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dolap",
+        "englishWord": "Cabinet",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dolaşmak",
+        "englishWord": "To wander",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Doldurmak",
+        "englishWord": "To fill",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dolu",
+        "englishWord": "Full",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dondurma",
+        "englishWord": "Ice cream",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dönem",
+        "englishWord": "Period (of time)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Döner",
+        "englishWord": "Shaved Meat",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dönmek",
+        "englishWord": "To turn",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dört",
+        "englishWord": "Four",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dost",
+        "englishWord": "Best friend",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dosya",
+        "englishWord": "Folder",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Döviz",
+        "englishWord": "Foreign currency (esp. Dollars, Euro)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Düğün",
+        "englishWord": "Wedding celebration",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dükkan",
+        "englishWord": "Shop",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Duman",
+        "englishWord": "Smoke",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dün",
+        "englishWord": "Yesterday",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dünya",
+        "englishWord": "Earth, world",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Durmak",
+        "englishWord": "To stop",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Durum",
+        "englishWord": "Situation",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Dürüm",
+        "englishWord": "Sandwich wrap",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Duş almak",
+        "englishWord": "To take a shower",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Düşmek",
+        "englishWord": "To fall",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Düşünce",
+        "englishWord": "Thought",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Düşünmek",
+        "englishWord": "To think",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Duvar",
+        "englishWord": "Wall",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Duygu",
+        "englishWord": "Emotion, sense",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Duymak",
+        "englishWord": "To hear, to sense",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Düz",
+        "englishWord": "Straight",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Düzeltmek",
+        "englishWord": "To correct",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Düzenlemek",
+        "englishWord": "To organize",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Eğitim",
+        "englishWord": "Education",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ek",
+        "englishWord": "Addition, suffix",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ekim",
+        "englishWord": "October",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Eklemek",
+        "englishWord": "To add (common speech)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ekmek",
+        "englishWord": "Bread",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ekonomi",
+        "englishWord": "Economy",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Eksik",
+        "englishWord": "Missing",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "El",
+        "englishWord": "Hand",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Elbette",
+        "englishWord": "Certainly",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Eldiven",
+        "englishWord": "Glove",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Elektrik",
+        "englishWord": "Electricity, electric",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Eleman",
+        "englishWord": "Worker",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Elli",
+        "englishWord": "Fifty",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Elma",
+        "englishWord": "Apple",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Emekli",
+        "englishWord": "Retired",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Emin",
+        "englishWord": "Certain",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Emlakçı",
+        "englishWord": "Realtor",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "En",
+        "englishWord": "Most (or width)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Enerji",
+        "englishWord": "Energy",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Enflasyon",
+        "englishWord": "Inflation",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Engel",
+        "englishWord": "Barrier",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Engelli",
+        "englishWord": "Disabled",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Erimek",
+        "englishWord": "To melt",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Erkek",
+        "englishWord": "Boy (or male)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Erken",
+        "englishWord": "Early",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Eş",
+        "englishWord": "Spouse, companion",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Eşit",
+        "englishWord": "Equal",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Eski",
+        "englishWord": "Old",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Eskiden",
+        "englishWord": "In the past",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Eşya",
+        "englishWord": "Furnishings, stuff",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Et",
+        "englishWord": "Meat, flesh",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Etki",
+        "englishWord": "Effect",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Etkilemek",
+        "englishWord": "To affect",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Etmek",
+        "englishWord": "To do",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ev",
+        "englishWord": "Home",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ev sahibi",
+        "englishWord": "Home owner",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Evet",
+        "englishWord": "Yes",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Evlenmek",
+        "englishWord": "To marry",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Evli",
+        "englishWord": "Married",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Eylül",
+        "englishWord": "September",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Fabrika",
+        "englishWord": "Factory",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Fakat",
+        "englishWord": "But",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Fakir",
+        "englishWord": "Poor",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Falan filan",
+        "englishWord": "Etc",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Fare",
+        "englishWord": "Mouse (animal or for computer)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Fark",
+        "englishWord": "Difference",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Fark etmek",
+        "englishWord": "To notice",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Farketmez",
+        "englishWord": "It doesn't matter",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Farklı",
+        "englishWord": "Different",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Fazla",
+        "englishWord": "Too much",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Fikir",
+        "englishWord": "Idea",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Film",
+        "englishWord": "Movie (film)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Fincan",
+        "englishWord": "(Tea or turkish coffee) cup",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Fırsat",
+        "englishWord": "Opportunity",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Fiş",
+        "englishWord": "Receipt, electrical plug",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Fiyat",
+        "englishWord": "Price",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Fotoğraf",
+        "englishWord": "Photograph",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Galiba",
+        "englishWord": "Probably",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gayet",
+        "englishWord": "Really, quite",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gaz",
+        "englishWord": "Gas (but not gasoline)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gazete",
+        "englishWord": "Newspaper (gazette)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Geç",
+        "englishWord": "Late",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Geç kalmak",
+        "englishWord": "To be late",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gece",
+        "englishWord": "Night",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Geçen",
+        "englishWord": "Last (week, month, year), one that passes",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Geçici",
+        "englishWord": "Temporary",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Geçmek",
+        "englishWord": "To pass",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Geçmiş",
+        "englishWord": "Past",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gelecek",
+        "englishWord": "Next, future",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gelenek",
+        "englishWord": "Tradition",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gelir",
+        "englishWord": "Income",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gelmek",
+        "englishWord": "To come",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Genç",
+        "englishWord": "Young (person)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gene",
+        "englishWord": "Again",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Genel",
+        "englishWord": "General",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Genellikle",
+        "englishWord": "Generally",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Geniş",
+        "englishWord": "Wide (or loose fitting)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gerçek",
+        "englishWord": "True, truth",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gerçekten",
+        "englishWord": "Really",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gerekli",
+        "englishWord": "Needed",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gerekmek",
+        "englishWord": "To be needed",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Geri gelmek",
+        "englishWord": "To come back",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Geri vermek",
+        "englishWord": "To give back",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Getirmek",
+        "englishWord": "To bring",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gezmek",
+        "englishWord": "To explore",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gibi",
+        "englishWord": "Like, similar to",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gıda",
+        "englishWord": "Food (market)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Giriş",
+        "englishWord": "Entrance",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Girmek",
+        "englishWord": "To enter",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gitmek",
+        "englishWord": "To go",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Giymek",
+        "englishWord": "To put on (clothing)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Giysi",
+        "englishWord": "Outfit (clothing)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gizli",
+        "englishWord": "Secret (private)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Göbek",
+        "englishWord": "Stomach, belly, center",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Göçmen",
+        "englishWord": "Refugee",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gök",
+        "englishWord": "Sky (or heaven)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Göl",
+        "englishWord": "Lake",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Göndermek",
+        "englishWord": "To send",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gönül",
+        "englishWord": "Heart, soul",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Görev",
+        "englishWord": "Duty",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Görmek",
+        "englishWord": "To see",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Görünmek",
+        "englishWord": "To appear",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Görüşmek",
+        "englishWord": "To talk with, to meet with",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Göstermek",
+        "englishWord": "To show",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Götürmek",
+        "englishWord": "To take something somewhere",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Göz",
+        "englishWord": "Eye",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gözlük",
+        "englishWord": "Glasses",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gri",
+        "englishWord": "Grey",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Grip",
+        "englishWord": "Flu",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Grup",
+        "englishWord": "Group",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Güç",
+        "englishWord": "Strength",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Güçlü",
+        "englishWord": "Strong",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Güle güle",
+        "englishWord": "Bye",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gülmek",
+        "englishWord": "To laugh (or smile)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gülümsemek",
+        "englishWord": "To smile",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gümüş",
+        "englishWord": "Silver",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Gün",
+        "englishWord": "Day",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Günah",
+        "englishWord": "Sin",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Güneş",
+        "englishWord": "Sun",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Güney",
+        "englishWord": "South",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Güven",
+        "englishWord": "Trust",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Güvenlik",
+        "englishWord": "Security",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Güvenmek",
+        "englishWord": "To trust",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Güzel",
+        "englishWord": "Good, pretty",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Haber",
+        "englishWord": "News",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hadi",
+        "englishWord": "Hurry, let's go",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hafif",
+        "englishWord": "Light (weight)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hafta",
+        "englishWord": "Week",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hafta sonu",
+        "englishWord": "Weekend",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hâkim",
+        "englishWord": "Judge",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Haklı",
+        "englishWord": "Right (justified in saying something)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hal",
+        "englishWord": "State, status",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hâlâ",
+        "englishWord": "Still",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Halı",
+        "englishWord": "Carpet",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Halk",
+        "englishWord": "People (people group)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hamburger",
+        "englishWord": "Hamburger",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hangi",
+        "englishWord": "Which",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hanım",
+        "englishWord": "Mrs.",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hapishane",
+        "englishWord": "Jail",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Harcamak",
+        "englishWord": "To spend",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hareket",
+        "englishWord": "Activity",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Harika",
+        "englishWord": "Wonderful",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Harita",
+        "englishWord": "Map",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hasta",
+        "englishWord": "Sick",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hastane",
+        "englishWord": "Hospital",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hata",
+        "englishWord": "Mistake, imperfection",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hatırlamak",
+        "englishWord": "To remember",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hava",
+        "englishWord": "Air",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Havaalanı",
+        "englishWord": "Airport",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Havlu",
+        "englishWord": "Towel",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Havuz",
+        "englishWord": "Pool",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hayal etmek",
+        "englishWord": "To dream, imagine",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hayat",
+        "englishWord": "Life",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hayır",
+        "englishWord": "No",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hayvan",
+        "englishWord": "Animal",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hayvanat bahçesi",
+        "englishWord": "Zoo",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hazır",
+        "englishWord": "Ready",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Haziran",
+        "englishWord": "June",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hedef",
+        "englishWord": "Target, goal",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hediye",
+        "englishWord": "Gift",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hemen",
+        "englishWord": "Right now",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Henüz",
+        "englishWord": "Not yet",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hep",
+        "englishWord": "All",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hepsi",
+        "englishWord": "All (of a group)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Her",
+        "englishWord": "Every",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Her gün",
+        "englishWord": "Every day",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Her şey",
+        "englishWord": "Everything",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Her zaman",
+        "englishWord": "All the time",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Herhalde",
+        "englishWord": "Probably",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Herhangi",
+        "englishWord": "Whichever",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Herkes",
+        "englishWord": "Everyone",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hesap",
+        "englishWord": "Account",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hesap makinası",
+        "englishWord": "Calculator",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Heyecanlanmak",
+        "englishWord": "To be excited",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Heyecanlı",
+        "englishWord": "Excited",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hiçbir",
+        "englishWord": "None",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hikâye",
+        "englishWord": "Story",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hırdavatçı",
+        "englishWord": "Hardware store",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hissetmek",
+        "englishWord": "To feel (emotion)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hızlı",
+        "englishWord": "Fast",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hizmet etmek",
+        "englishWord": "To serve",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hoca",
+        "englishWord": "Teacher",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Hoş",
+        "englishWord": "Nice",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İbadet",
+        "englishWord": "Worship",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İçecek",
+        "englishWord": "Drink",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İçmek",
+        "englishWord": "To drink",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İğne",
+        "englishWord": "Needle (or syringe)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İhtiyaç",
+        "englishWord": "Need (basic need)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İki",
+        "englishWord": "Two",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İkram etmek",
+        "englishWord": "To treat, to give something for free",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İl",
+        "englishWord": "Province",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İlaç",
+        "englishWord": "Medicine",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İlçe",
+        "englishWord": "District (section of a province)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İlgi",
+        "englishWord": "Interest",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İlginç",
+        "englishWord": "Interesting (or strange)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İlişki",
+        "englishWord": "Relationship",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İlk",
+        "englishWord": "First",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İlkbahar",
+        "englishWord": "Spring",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İmkânsiz",
+        "englishWord": "Impossible",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İmza",
+        "englishWord": "Signature",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İnanç",
+        "englishWord": "Faith",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İnanmak",
+        "englishWord": "To believe",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İnce",
+        "englishWord": "Thin",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İndirim",
+        "englishWord": "Discount",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İnek",
+        "englishWord": "Cow",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İngilizce",
+        "englishWord": "English (language)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İnmek",
+        "englishWord": "To get off",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İnşaat",
+        "englishWord": "Construction",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İnsan",
+        "englishWord": "Person",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İnternet",
+        "englishWord": "Internet",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İp",
+        "englishWord": "Thread",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İptal etmek",
+        "englishWord": "To cancel",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İş",
+        "englishWord": "Work (profession)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İşçi",
+        "englishWord": "Worker",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Işık",
+        "englishWord": "Light",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İsim",
+        "englishWord": "Name",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Islak",
+        "englishWord": "Wet",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İşlem",
+        "englishWord": "Process",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İstemek",
+        "englishWord": "To want",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İyi",
+        "englishWord": "Good",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İzin",
+        "englishWord": "Permission, permit",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İzin vermek",
+        "englishWord": "To give permission",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "İzlemek",
+        "englishWord": "To watch, to follow",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kaba",
+        "englishWord": "Rude",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kablo",
+        "englishWord": "Cable",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kabul etmek",
+        "englishWord": "To accept",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kaç",
+        "englishWord": "How many",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kaçmak",
+        "englishWord": "To escape",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kadar",
+        "englishWord": "Quantity",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kadın",
+        "englishWord": "Woman",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kafa",
+        "englishWord": "Head",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kâğıt",
+        "englishWord": "Paper",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kahraman",
+        "englishWord": "Hero",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kahvaltı",
+        "englishWord": "Breakfast",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kahve",
+        "englishWord": "Coffee",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kahverengi",
+        "englishWord": "Brown",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kalabalık",
+        "englishWord": "Crowded (or crowd)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kaldırmak",
+        "englishWord": "To remove",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kalem",
+        "englishWord": "Pen (or other writing utensil)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kalıcı",
+        "englishWord": "Permanent",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kalın",
+        "englishWord": "Thick",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kalite",
+        "englishWord": "Quality",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kalkmak",
+        "englishWord": "To rise",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kalmak",
+        "englishWord": "To stay",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kâlp",
+        "englishWord": "Heart",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kan",
+        "englishWord": "Blood",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kanal",
+        "englishWord": "Canal, channel",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kanepe",
+        "englishWord": "Couch",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kanun",
+        "englishWord": "Law",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kapak",
+        "englishWord": "Cover",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kapatmak",
+        "englishWord": "To close (something)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kapı",
+        "englishWord": "Door",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Karanlık",
+        "englishWord": "Darkness",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Karar vermek",
+        "englishWord": "To decide",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kardeş",
+        "englishWord": "Sibling",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Karı",
+        "englishWord": "Wife",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Karın",
+        "englishWord": "Stomach",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Karıştırmak",
+        "englishWord": "To mix",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Karşı",
+        "englishWord": "Opposite side, against",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kart",
+        "englishWord": "Card",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kasa",
+        "englishWord": "Checkout",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kasaba",
+        "englishWord": "Town",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kaşık",
+        "englishWord": "Spoon",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kasım",
+        "englishWord": "November",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kat",
+        "englishWord": "Floor (layer)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Katılmak",
+        "englishWord": "To join, to agree",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kavşak",
+        "englishWord": "Roundabout",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kaya",
+        "englishWord": "Boulder",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kaybetmek",
+        "englishWord": "To lose",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kayıt",
+        "englishWord": "Record",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kaymak",
+        "englishWord": "To slide, skate (or whipped cream)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kaynak",
+        "englishWord": "Source",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kaza",
+        "englishWord": "Crash, accident",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kazanmak",
+        "englishWord": "To win",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kebab",
+        "englishWord": "Kabob",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Keçi",
+        "englishWord": "Goat",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kedi",
+        "englishWord": "Cat",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kelime",
+        "englishWord": "Word",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kenar",
+        "englishWord": "Edge",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kent",
+        "englishWord": "City",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kesilmek",
+        "englishWord": "To be cut, to be turned off",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kesin",
+        "englishWord": "Certain",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kesinlikle",
+        "englishWord": "Certainly",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kesmek",
+        "englishWord": "To cut",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kibar",
+        "englishWord": "Polite",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kılıç",
+        "englishWord": "Sword",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kilim",
+        "englishWord": "Carpet, floor mat",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kilitlemek",
+        "englishWord": "To lock",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kılmak",
+        "englishWord": "To do, to make, to perform",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kilo",
+        "englishWord": "Kilogram",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kilometre",
+        "englishWord": "Kilometer",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kim",
+        "englishWord": "Who",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kimlik",
+        "englishWord": "Identity",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kırk",
+        "englishWord": "Forty",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kirli",
+        "englishWord": "Dirty",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kırmızı",
+        "englishWord": "Red",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kış",
+        "englishWord": "Winter",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kısa",
+        "englishWord": "Short",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kişi",
+        "englishWord": "Person",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kısım",
+        "englishWord": "Part",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kitap",
+        "englishWord": "Book",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kız",
+        "englishWord": "Girl",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kız çocuk",
+        "englishWord": "Girl, daughter",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kız kardeş",
+        "englishWord": "Sister",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kızarmak",
+        "englishWord": "To fry, to turn red",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kızgın",
+        "englishWord": "Angry, hot",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Koca",
+        "englishWord": "Husband (or huge)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Koku",
+        "englishWord": "Smell",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kol",
+        "englishWord": "Arm",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kol saati",
+        "englishWord": "Wrist watch",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kolay",
+        "englishWord": "Easy",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Koltuk",
+        "englishWord": "Couch (or armchair)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kombi",
+        "englishWord": "Natural gas water heater",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Komik",
+        "englishWord": "Funny",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kontrol etmek",
+        "englishWord": "To check",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Konu",
+        "englishWord": "Topic",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Konuşmak",
+        "englishWord": "To talk",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Köpek",
+        "englishWord": "Dog",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kör",
+        "englishWord": "Blind",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Köri",
+        "englishWord": "Curry",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Koridor",
+        "englishWord": "Aisle",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Korkmak",
+        "englishWord": "To be afraid",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Korumak",
+        "englishWord": "To protect",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Köşe",
+        "englishWord": "Corner",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Koşmak",
+        "englishWord": "To run",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kötü",
+        "englishWord": "Bad",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kötülük",
+        "englishWord": "Evil",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Köy",
+        "englishWord": "Village",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Koymak",
+        "englishWord": "To put",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Koyu",
+        "englishWord": "Dark, intense",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Koyun",
+        "englishWord": "Sheep",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kral",
+        "englishWord": "King",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kredi",
+        "englishWord": "Credit (loan)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kriz",
+        "englishWord": "Crisis",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Küçük",
+        "englishWord": "Small",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kulak",
+        "englishWord": "Ear",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kullanmak",
+        "englishWord": "To use",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kültür",
+        "englishWord": "Culture",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kum",
+        "englishWord": "Sand",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kumanda",
+        "englishWord": "Remote control",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kurabiye",
+        "englishWord": "Cookie",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kural",
+        "englishWord": "Rule",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kurbağa",
+        "englishWord": "Frog",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kurban etmek",
+        "englishWord": "To sacrifice (an animal)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kurmak",
+        "englishWord": "To build (a building), to establish (an organization)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kurt",
+        "englishWord": "Wolf",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kurtarmak",
+        "englishWord": "To save, to rescue",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kurtulmak",
+        "englishWord": "To be saved, rescued",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kuru",
+        "englishWord": "Dry",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kuş",
+        "englishWord": "Bird",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kusura bakma",
+        "englishWord": "I'm sorry (informal apology)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kusursuz",
+        "englishWord": "Flawless, perfect",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kutlamak",
+        "englishWord": "To celebrate",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kutu",
+        "englishWord": "Box",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Kuzey",
+        "englishWord": "North",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Laf",
+        "englishWord": "Word, empty words",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Lastik",
+        "englishWord": "Tire",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Lavabo",
+        "englishWord": "Bathroom, bathroom sink",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Lâzım",
+        "englishWord": "Needed",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Lezzetli",
+        "englishWord": "Flavorful, good tasting",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Lider",
+        "englishWord": "Leader",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Limon",
+        "englishWord": "Lemon",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Lira",
+        "englishWord": "Lira (Turkish unit of money)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Lise",
+        "englishWord": "High school",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Lüks",
+        "englishWord": "Luxurious",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Lütfen",
+        "englishWord": "Please",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Maç",
+        "englishWord": "Sports match",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Madde",
+        "englishWord": "Material",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mağaza",
+        "englishWord": "Store",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mahalle",
+        "englishWord": "Neighborhood (part of an ilçe)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Makine",
+        "englishWord": "Machine",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mal",
+        "englishWord": "Goods, property",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Malzeme",
+        "englishWord": "Ingredient, material",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mantık",
+        "englishWord": "Logic",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Manzara",
+        "englishWord": "Scenery",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Marka",
+        "englishWord": "Brand",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mart",
+        "englishWord": "March",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Masa",
+        "englishWord": "Table",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mavi",
+        "englishWord": "Blue",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Maya",
+        "englishWord": "Yeast",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mayıs",
+        "englishWord": "May",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Meclis",
+        "englishWord": "Parliament",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Medya",
+        "englishWord": "Media",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mektup",
+        "englishWord": "Letter (mail)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Memleket",
+        "englishWord": "Homeland",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Merak etmek",
+        "englishWord": "To worry, to be curious",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Merdiven",
+        "englishWord": "Stairs, ladder",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Merhaba",
+        "englishWord": "Hello",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Merkez",
+        "englishWord": "Center",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mesafe",
+        "englishWord": "Distance",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mesaj",
+        "englishWord": "Message (usually text message)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mesela",
+        "englishWord": "For example",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mesele",
+        "englishWord": "Issue, matter",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Meslek",
+        "englishWord": "Profession",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Metal",
+        "englishWord": "Metal",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Metre",
+        "englishWord": "Meter (or tape measure)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Metre kare",
+        "englishWord": "Square meters",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Meydan",
+        "englishWord": "City square, commons",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Meyve",
+        "englishWord": "Fruit",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mide",
+        "englishWord": "Stomach",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Miktar",
+        "englishWord": "Amount",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Millet",
+        "englishWord": "People, nation",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Milyar",
+        "englishWord": "Billion",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Milyon",
+        "englishWord": "Million",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Miras",
+        "englishWord": "Inheritance",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Misafir",
+        "englishWord": "Guest",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mısır",
+        "englishWord": "Corn, Egypt",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mor",
+        "englishWord": "Purple",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Müdür",
+        "englishWord": "Manager",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mum",
+        "englishWord": "Candle",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mümkün",
+        "englishWord": "Possible",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Müsait",
+        "englishWord": "Available",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Müşteri",
+        "englishWord": "Customer",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mutfak",
+        "englishWord": "Kitchen",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mutlaka",
+        "englishWord": "Absolutely",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mutlu",
+        "englishWord": "Happy",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Mutsuz",
+        "englishWord": "Unhappy",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Müzik",
+        "englishWord": "Music",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Nakit",
+        "englishWord": "Cash",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Nasıl",
+        "englishWord": "How",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ne",
+        "englishWord": "What",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Neden",
+        "englishWord": "Why",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Nefes almak",
+        "englishWord": "To breathe",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Nehir",
+        "englishWord": "River",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Nerede",
+        "englishWord": "Where",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Neredeyse",
+        "englishWord": "Almost",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Net",
+        "englishWord": "Clear, plain",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Neyse",
+        "englishWord": "Anyway",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Nisan",
+        "englishWord": "April",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Nişanlı",
+        "englishWord": "Engaged",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Niye",
+        "englishWord": "Why (informal)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Nöbetçi",
+        "englishWord": "Open during late hours (ER, eczane, etc)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Nokta",
+        "englishWord": "Point (or period)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Normal",
+        "englishWord": "Normal",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Normalde",
+        "englishWord": "Normally",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Numara",
+        "englishWord": "Number",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Öbür",
+        "englishWord": "The other (one)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ocak",
+        "englishWord": "January (or stove)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Oda",
+        "englishWord": "Room",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ödemek",
+        "englishWord": "To pay (money)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Odun",
+        "englishWord": "Log",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Öğrenci",
+        "englishWord": "Student",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Öğretmek",
+        "englishWord": "To teach",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Öğretmen",
+        "englishWord": "Teacher",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Oğul",
+        "englishWord": "Son",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Okul",
+        "englishWord": "School",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Okumak",
+        "englishWord": "To read, study",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Okyanus",
+        "englishWord": "Ocean",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Olay",
+        "englishWord": "Event",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Oldukça",
+        "englishWord": "Really",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Öldürmek",
+        "englishWord": "To kill",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Olmak",
+        "englishWord": "To be, to become",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ölmek",
+        "englishWord": "To die",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ölüm",
+        "englishWord": "Death",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Olur",
+        "englishWord": "Okay",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "On",
+        "englishWord": "Ten",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Onaylamak",
+        "englishWord": "To condone, accept",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Önce",
+        "englishWord": "Before",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Önemli",
+        "englishWord": "Important",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Orman",
+        "englishWord": "Forest",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Örneğin",
+        "englishWord": "For example",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Örnek",
+        "englishWord": "Example",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Orta",
+        "englishWord": "Middle, center",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ortak",
+        "englishWord": "Shared",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Örümcek",
+        "englishWord": "Spider",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ot",
+        "englishWord": "Feed (for an animal)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Otel",
+        "englishWord": "Hotel",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Otobüs",
+        "englishWord": "Bus",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Otomobil",
+        "englishWord": "Automobile",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Oturmak",
+        "englishWord": "To sit",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Otuz",
+        "englishWord": "Thirty",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Öykü",
+        "englishWord": "Story",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Öyle",
+        "englishWord": "That way, like that",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Oynamak",
+        "englishWord": "To play",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Oyun",
+        "englishWord": "Game",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Oyuncak",
+        "englishWord": "Toy",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Özel",
+        "englishWord": "Special",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Özellikle",
+        "englishWord": "Especially",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Özgür",
+        "englishWord": "Free (not enslaved)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Özlemek",
+        "englishWord": "To miss (someone)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Özür dilerim",
+        "englishWord": "I'm sorry (for a wrong I've done)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Pahalı",
+        "englishWord": "Expensive",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Pamuk",
+        "englishWord": "Cotton",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Pantolon",
+        "englishWord": "Pants",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Para",
+        "englishWord": "Money",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Parça",
+        "englishWord": "Part",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Parmak",
+        "englishWord": "Finger",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Parti",
+        "englishWord": "Party",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Pastane",
+        "englishWord": "Bakery",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Patlamak",
+        "englishWord": "To explode, to pop",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Patlıcan",
+        "englishWord": "Eggplant",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Patron",
+        "englishWord": "Employer, boss",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Paylaşmak",
+        "englishWord": "To share",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Pazar",
+        "englishWord": "Sunday (or bazaar)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Pazartesi",
+        "englishWord": "Monday",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Pek",
+        "englishWord": "Very",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Peki",
+        "englishWord": "Well",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Pembe",
+        "englishWord": "Pink",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Pencere",
+        "englishWord": "Window",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Perde",
+        "englishWord": "Curtains",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Perşembe",
+        "englishWord": "Thursday",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Peşin",
+        "englishWord": "Paid up front (not in installments)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Pişman",
+        "englishWord": "Regretful",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Plan",
+        "englishWord": "Plan",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Polis",
+        "englishWord": "Police officer",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Portakal",
+        "englishWord": "Orange",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Problem",
+        "englishWord": "Problem",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Program",
+        "englishWord": "Schedule, computer program",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Proje",
+        "englishWord": "Project",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Puan",
+        "englishWord": "Point (in a game)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Rahat",
+        "englishWord": "Comfortable",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Reddetmek",
+        "englishWord": "To refuse",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Reklam",
+        "englishWord": "Advertisement",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Renk",
+        "englishWord": "Color",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Resim",
+        "englishWord": "Picture",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ruh",
+        "englishWord": "Spirit",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Rüya",
+        "englishWord": "Dream",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Rüzgâr",
+        "englishWord": "Wind",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Saat",
+        "englishWord": "Time, hour",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sabah",
+        "englishWord": "Morning",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sabırlı",
+        "englishWord": "Patient",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sabun",
+        "englishWord": "Soap",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Saç",
+        "englishWord": "Hair",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sade",
+        "englishWord": "Plain, unsweetened",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sadece",
+        "englishWord": "Only",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sağlamak",
+        "englishWord": "To provide",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sağlık",
+        "englishWord": "health",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sağol",
+        "englishWord": "Thanks",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sahip",
+        "englishWord": "Owner",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sakin",
+        "englishWord": "Calm",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Saklamak",
+        "englishWord": "To store, to hide (something)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Salatalık",
+        "englishWord": "Cucumber",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Salı",
+        "englishWord": "Tuesday",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Salon",
+        "englishWord": "Living room",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sanat",
+        "englishWord": "Art",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sandalye",
+        "englishWord": "Chair",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Saniye",
+        "englishWord": "Second",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sanki",
+        "englishWord": "As if",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sanmak",
+        "englishWord": "To think, suppose",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Şans",
+        "englishWord": "Chance",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Şapka",
+        "englishWord": "Hat",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sarı",
+        "englishWord": "Yellow",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Şarj",
+        "englishWord": "Charge (for a phone or other device)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Şarkı",
+        "englishWord": "Song",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Şart",
+        "englishWord": "Condition, need",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Satın almak",
+        "englishWord": "To purchase",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Satmak",
+        "englishWord": "To sell",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Savaş",
+        "englishWord": "War",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sayfa",
+        "englishWord": "Page",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Saygı",
+        "englishWord": "Respect",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sayı",
+        "englishWord": "Number",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sebep",
+        "englishWord": "Reason, cause",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sebze",
+        "englishWord": "Vegetable",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Seçim",
+        "englishWord": "Choice, election",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Seçmek",
+        "englishWord": "To choose",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Şehir",
+        "englishWord": "City",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sehpa",
+        "englishWord": "Coffee table",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Şeker",
+        "englishWord": "Sugar",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Şekil",
+        "englishWord": "Shape",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sekiz",
+        "englishWord": "Eight",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Seksan",
+        "englishWord": "Eighty",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sene",
+        "englishWord": "Year",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sepet",
+        "englishWord": "Basket",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Serbest",
+        "englishWord": "Free (independent)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sert",
+        "englishWord": "Hard, harsh",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Servis",
+        "englishWord": "Shuttle, place setting",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ses",
+        "englishWord": "Sound",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ses kaydı yapmak",
+        "englishWord": "To record (sound)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sevgi",
+        "englishWord": "Love",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sevinmek",
+        "englishWord": "To rejoice, to be happy",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sevmek",
+        "englishWord": "To love",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Şey",
+        "englishWord": "Thing",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Seyretmek",
+        "englishWord": "To watch",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sıcak",
+        "englishWord": "Warm, friendly",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Şifre",
+        "englishWord": "Password",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sigara",
+        "englishWord": "Cigarette",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sigorta",
+        "englishWord": "Insurance",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Şiir",
+        "englishWord": "Poem",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Şikayet etmek",
+        "englishWord": "To complain",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sıkılmak",
+        "englishWord": "To be bored with",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sıkıntı",
+        "englishWord": "Trouble",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Silah",
+        "englishWord": "Weapon",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Silmek",
+        "englishWord": "To erase",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Şimdi",
+        "englishWord": "Now",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sınav",
+        "englishWord": "Exam",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sinek",
+        "englishWord": "Fly (or other similar bug)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sınıf",
+        "englishWord": "Class",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sınır",
+        "englishWord": "Border, limit",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sinirlenmek",
+        "englishWord": "To be angry",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sipariş vermek",
+        "englishWord": "To place an order",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sıra",
+        "englishWord": "Turn, queue",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sirke",
+        "englishWord": "Vinegar",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Şirket",
+        "englishWord": "Company",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sırt",
+        "englishWord": "Back",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Şişe",
+        "englishWord": "Bottle",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sistem",
+        "englishWord": "System",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sıvı",
+        "englishWord": "Liquid",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Siyah",
+        "englishWord": "Black",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Siyaset",
+        "englishWord": "Politics",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Soğuk",
+        "englishWord": "Cold",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sohbet etmek",
+        "englishWord": "To chat",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sokak",
+        "englishWord": "Street, side road",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sokmak",
+        "englishWord": "To insert, to sting",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sol",
+        "englishWord": "Left",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Son",
+        "englishWord": "Last",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sonbahar",
+        "englishWord": "Fall",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sonra",
+        "englishWord": "After",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sonsuz",
+        "englishWord": "Forever",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sonuç",
+        "englishWord": "Result",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sormak",
+        "englishWord": "To ask",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Soru",
+        "englishWord": "Question",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sorun",
+        "englishWord": "Problem",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sos",
+        "englishWord": "Sauce",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sosyal",
+        "englishWord": "Social",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sote",
+        "englishWord": "Saute",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Söylemek",
+        "englishWord": "To say",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Söz",
+        "englishWord": "Word, promise",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Spor yapmak",
+        "englishWord": "To exercise",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Su",
+        "englishWord": "Water",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Şubat",
+        "englishWord": "February",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Suç",
+        "englishWord": "Crime, fault",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sunmak",
+        "englishWord": "To offer, present",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Şüphe",
+        "englishWord": "Suspicion, doubt",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Süre",
+        "englishWord": "Duration",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sürekli",
+        "englishWord": "Continuously",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sürmek",
+        "englishWord": "To spread, to drive",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sürpriz",
+        "englishWord": "Surprise",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Sürücü",
+        "englishWord": "Driver",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Susamak",
+        "englishWord": "To be thirsty",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Süt",
+        "englishWord": "Milk",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tabak",
+        "englishWord": "Plate",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tabii",
+        "englishWord": "Of course",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tahmin etmek",
+        "englishWord": "To predict",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tahta",
+        "englishWord": "Wood",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Takım",
+        "englishWord": "Team",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Takip etmek",
+        "englishWord": "To follow",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Takmak",
+        "englishWord": "To hang up, to attach",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Taksit",
+        "englishWord": "Payment in installments",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Talep",
+        "englishWord": "Request",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tam",
+        "englishWord": "Exact, whole",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tamam",
+        "englishWord": "Okay, finished",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tamir etmek",
+        "englishWord": "To repair",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tane",
+        "englishWord": "Piece, unit",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tanımak",
+        "englishWord": "To know (person)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tanışmak",
+        "englishWord": "To meet (for the first time)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Taraf",
+        "englishWord": "Side",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tarih",
+        "englishWord": "Date, history",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tartışmak",
+        "englishWord": "To argue",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tarz",
+        "englishWord": "Style",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Taş",
+        "englishWord": "Stone",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Taşımak",
+        "englishWord": "To carry, to move",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tatil",
+        "englishWord": "Vacation",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tatlı",
+        "englishWord": "Sweet, dessert",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tavan",
+        "englishWord": "Ceiling",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tavşan",
+        "englishWord": "Rabbit",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tavsiye etmek",
+        "englishWord": "To recommend",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Taze",
+        "englishWord": "Fresh",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tebrik etmek",
+        "englishWord": "To congratulate",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tedavi",
+        "englishWord": "Therapy",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tehlike",
+        "englishWord": "Danger",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tek",
+        "englishWord": "Single, only",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Teknik",
+        "englishWord": "Technical, tecnique",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Teknoloji",
+        "englishWord": "Technology",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tekrar",
+        "englishWord": "Again",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Telefon",
+        "englishWord": "Telephone",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Televizyon",
+        "englishWord": "Television",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tembel",
+        "englishWord": "Lazy",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Temel",
+        "englishWord": "Foundation",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Temiz",
+        "englishWord": "Clean",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Temizlemek",
+        "englishWord": "To clean (something)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Temmuz",
+        "englishWord": "July",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tencere",
+        "englishWord": "Pot",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tepe",
+        "englishWord": "Hill",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tepki",
+        "englishWord": "Reaction",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tepsi",
+        "englishWord": "Tray",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ter",
+        "englishWord": "Sweat",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tercih etmek",
+        "englishWord": "To prefer",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Terlik",
+        "englishWord": "Slippers",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ters",
+        "englishWord": "Backwards",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Teyze",
+        "englishWord": "Aunt (Mother's sister)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tip",
+        "englishWord": "Type",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Top",
+        "englishWord": "Ball",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Toplam",
+        "englishWord": "Total",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Toplamak",
+        "englishWord": "To gather (or add numbers)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Toplantı",
+        "englishWord": "Meeting",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Toplum",
+        "englishWord": "Society",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Toprak",
+        "englishWord": "Dirt",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Toz",
+        "englishWord": "Dust (or powder)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Trafik",
+        "englishWord": "Traffic",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tren",
+        "englishWord": "Train",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tüm",
+        "englishWord": "All, entire",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tür",
+        "englishWord": "Type",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Türkçe",
+        "englishWord": "Turkish",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Turuncu",
+        "englishWord": "Orange (the color, not the fruit)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tutmak",
+        "englishWord": "To catch, to hold",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tuvalet",
+        "englishWord": "Toilet",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Tuz",
+        "englishWord": "Salt",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Uç",
+        "englishWord": "Point",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Üç",
+        "englishWord": "Three",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Uçak",
+        "englishWord": "Airplane",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Uçmak",
+        "englishWord": "To fly",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ücret",
+        "englishWord": "Price (or salary)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Üçüncü",
+        "englishWord": "Third",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ucuz",
+        "englishWord": "Cheap",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ufak",
+        "englishWord": "Tiny",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Uğraşmak",
+        "englishWord": "To struggle",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ulaşmak",
+        "englishWord": "To arrive",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ülke",
+        "englishWord": "Country",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Uluslararası",
+        "englishWord": "International",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ummak",
+        "englishWord": "To hope",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Üniversite",
+        "englishWord": "University",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ünlü",
+        "englishWord": "Famous",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Unutmak",
+        "englishWord": "To forget",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ürün",
+        "englishWord": "Product",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Usta",
+        "englishWord": "Expert, craftsman",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Üşümek",
+        "englishWord": "To be cold",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Utanmak",
+        "englishWord": "To be shy",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Uyanık",
+        "englishWord": "Awake",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Üye",
+        "englishWord": "Member",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Uygulamak",
+        "englishWord": "To apply",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Uygun",
+        "englishWord": "Available",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Uymak",
+        "englishWord": "To obey, to fit",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Uyumak",
+        "englishWord": "To sleep",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Uzak",
+        "englishWord": "Far",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Uzanmak",
+        "englishWord": "To lie down",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Uzatmak",
+        "englishWord": "To extend",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Üzgün",
+        "englishWord": "Sad",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Uzman",
+        "englishWord": "Expert",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Üzüm",
+        "englishWord": "Grapes",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Uzun",
+        "englishWord": "Long, tall",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Vakit",
+        "englishWord": "Time",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Varmak",
+        "englishWord": "To arrive",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Vatandaş",
+        "englishWord": "Citizen",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Vazgeçmek",
+        "englishWord": "To change one's mind",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ve",
+        "englishWord": "And",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Vergi",
+        "englishWord": "Tax",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Vermek",
+        "englishWord": "To give",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Veya",
+        "englishWord": "Or",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Vücut",
+        "englishWord": "Body",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Vurmak",
+        "englishWord": "To hit",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "WC",
+        "englishWord": "Bathroom (water closet)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Ya da",
+        "englishWord": "Or",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yabancı",
+        "englishWord": "Foreigner",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yağ",
+        "englishWord": "Oil, fat",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yağmur",
+        "englishWord": "Rain",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yakalamak",
+        "englishWord": "To catch",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yakın",
+        "englishWord": "Near",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yaklaşık",
+        "englishWord": "Approximately",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yaklaşmak",
+        "englishWord": "To get closer",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yakmak",
+        "englishWord": "To light (a fire, stove)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yalnız",
+        "englishWord": "Alone",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yani",
+        "englishWord": "In other words",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yanıt",
+        "englishWord": "Answer",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yanlış",
+        "englishWord": "Wrong",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yanmak",
+        "englishWord": "To burn",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yapı",
+        "englishWord": "Structure",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yapmak",
+        "englishWord": "To do",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yaprak",
+        "englishWord": "Leaf",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yara",
+        "englishWord": "Injury",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yaratmak",
+        "englishWord": "To create",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yardım etmek",
+        "englishWord": "To help",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yarım",
+        "englishWord": "Half",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yaş",
+        "englishWord": "Age",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yasa",
+        "englishWord": "Law",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yaşam",
+        "englishWord": "Life",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yaşamak",
+        "englishWord": "To live",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yaşlı",
+        "englishWord": "Old (person)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yatak",
+        "englishWord": "Bed",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yatmak",
+        "englishWord": "To lie down",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yavaş",
+        "englishWord": "Slow",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yaygın",
+        "englishWord": "Common, widespread",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yaz",
+        "englishWord": "Summer",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yazar",
+        "englishWord": "Author",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yazmak",
+        "englishWord": "To write",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yedek",
+        "englishWord": "Extra",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yedi",
+        "englishWord": "Seven",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yemek",
+        "englishWord": "To Eat",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yeni",
+        "englishWord": "New",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yer",
+        "englishWord": "Place, floor",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yeşil",
+        "englishWord": "Green",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yetenek",
+        "englishWord": "Skill",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yeterli",
+        "englishWord": "Enough",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yetmiş",
+        "englishWord": "Seventy",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yıl",
+        "englishWord": "Year",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yılan",
+        "englishWord": "Snake",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yıldız",
+        "englishWord": "Star",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yine",
+        "englishWord": "Again",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yirmi",
+        "englishWord": "Twenty",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yiyecek",
+        "englishWord": "Food",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yoğun",
+        "englishWord": "Thick, busy",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yoğurt",
+        "englishWord": "Yogurt",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yoksa",
+        "englishWord": "Or",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yol",
+        "englishWord": "Road, path",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yön",
+        "englishWord": "Direction",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yönetici",
+        "englishWord": "Manager",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yönetmek",
+        "englishWord": "To lead",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yöntem",
+        "englishWord": "Method",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yorulmak",
+        "englishWord": "To be exhausted",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yorum",
+        "englishWord": "Comment",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yüksek",
+        "englishWord": "High",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yumurta",
+        "englishWord": "Egg",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yumuşak",
+        "englishWord": "Soft",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yurt dışı",
+        "englishWord": "Outside the country",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yurtiçi",
+        "englishWord": "Domestic (inside the country)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yürümek",
+        "englishWord": "To walk",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yuvarlak",
+        "englishWord": "Round",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yüz",
+        "englishWord": "Face, 100",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yüzde",
+        "englishWord": "Percent",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Yüzyıl",
+        "englishWord": "Century",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Zafer",
+        "englishWord": "Victory",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Zaman",
+        "englishWord": "Time",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Zarar",
+        "englishWord": "Damage",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Zarf",
+        "englishWord": "Envelope, adverb",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Zaten",
+        "englishWord": "Anyway, already",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Zayıf",
+        "englishWord": "Thin, weak",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Zehir",
+        "englishWord": "Poison",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Zeki",
+        "englishWord": "Intelligent",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Zemin",
+        "englishWord": "Ground (floor)",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Zengin",
+        "englishWord": "Rich",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Zevk",
+        "englishWord": "Pleasure",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Zeytin",
+        "englishWord": "Olive",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Zil",
+        "englishWord": "Doorbell",
+        "addedBy" : "system"
+    },
+    {
+        "turkishWord": "Zor",
+        "englishWord": "Difficult",
+        "addedBy" : "system"
+    }
+]
