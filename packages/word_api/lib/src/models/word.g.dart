@@ -21,6 +21,8 @@ Map<String, dynamic> _$WordToJson(Word instance) => <String, dynamic>{
     };
 
 const _$AddedByEnumMap = {
-  AddedBy.system: 'system',
+  AddedBy.smallPack: 'smallPack',
+  AddedBy.mediumPack: 'mediumPack',
+  AddedBy.largePack: 'largePack',
   AddedBy.user: 'user',
 };

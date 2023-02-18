@@ -3,7 +3,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'word.g.dart';
 
-enum AddedBy { system, user }
+enum AddedBy { smallPack, mediumPack, largePack ,user }
 
 @JsonSerializable()
 class Word extends Equatable {
