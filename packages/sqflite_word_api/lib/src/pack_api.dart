@@ -17,7 +17,7 @@ class PackAPI {
 
   Future<Database> initializeDb() async {
     String dbPath = join(await getDatabasesPath(), dbName);
-    var wordsDb = await openDatabase(dbPath, version: 1);
+    var wordsDb = await openDatabase(dbPath, version: 1, onCreate: createTable);
     return wordsDb;
   }
 
