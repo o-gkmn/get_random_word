@@ -15,8 +15,7 @@ class WordRepository {
 
   Future<void> add({required Word word}) => _wordApi.add(word: word);
 
-  Future<void> remove({required AddedBy addedBy, required int id}) =>
-      _wordApi.remove(addedBy: addedBy, id: id);
+  Future<void> remove({required Word word}) => _wordApi.remove(word: word);
 
   Future<void> clear({AddedBy? addedBy}) => _wordApi.clear(addedBy: addedBy);
 

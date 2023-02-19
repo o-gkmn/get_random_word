@@ -22,20 +22,12 @@ class PackAPI {
   }
 
   void createTable(Database db, int version) async {
-    var user = await db
-        .rawQuery('SELECT * FROM sqlite_master WHERE name="$userTable";');
-    var small = await db
-        .rawQuery('SELECT * FROM sqlite_master WHERE name="$smallPackTable";');
-    if (user.isEmpty) {
-      db.execute(
-        "Create table $userTable($columnId integer primary key AUTOINCREMENT, $columnEnglish text, $columnTurkish text, $columnAddedBy addedBy)",
-      );
-    }
-    if (small.isEmpty) {
-      db.execute(
-        "Create table $smallPackTable($columnId integer primary key AUTOINCREMENT, $columnEnglish text, $columnTurkish text, $columnAddedBy addedBy)",
-      );
-    }
+    await db.rawQuery(
+      "create table if not exists $userTable($columnId integer primary key AUTOINCREMENT, $columnEnglish text, $columnTurkish text, $columnAddedBy addedBy)",
+    );
+    await db.rawQuery(
+      "create table if not exists $smallPackTable($columnId integer primary key AUTOINCREMENT, $columnEnglish text, $columnTurkish text, $columnAddedBy addedBy)",
+    );
   }
 
   Future<void> deleteDatabase() async {

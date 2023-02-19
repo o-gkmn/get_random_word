@@ -11,7 +11,7 @@ abstract class WordApi {
 
   Future<void> add({required Word word});
 
-  Future<void> remove({required AddedBy addedBy, required int id});
+  Future<void> remove({required Word word});
 
   Future<void> clear({AddedBy? addedBy});
 

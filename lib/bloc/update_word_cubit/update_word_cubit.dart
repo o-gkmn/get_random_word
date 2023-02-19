@@ -21,9 +21,9 @@ class UpdateWordCubit extends Cubit<UpdateWordState> {
     }
   }
 
-  void deleteWord(int id) async {
+  void deleteWord(Word word) async {
     try {
-      await repository.remove(addedBy: AddedBy.user, id: id);
+      await repository.remove(word: word);
       emit(state.copyWith(status: UpdateStatus.succed));
     } catch (e) {
       emit(state.copyWith(

@@ -222,7 +222,7 @@ class _DeleteButton extends StatelessWidget {
         width: (MediaQuery.of(context).size.width / 2) - 20,
         child: ElevatedButton(
             onPressed: () {
-              context.read<UpdateWordCubit>().deleteWord(state.word.id);
+              context.read<UpdateWordCubit>().deleteWord(state.word);
               Navigator.pushReplacementNamed(context, listWord);
             },
             child:

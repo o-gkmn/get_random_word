@@ -47,12 +47,12 @@ class SqfliteDbHelper extends WordApi{
   }
 
   @override
-  Future<void> remove({required AddedBy addedBy, required int id}) async {
-    if(addedBy.name == AddedBy.smallPack.name){
-      await packAPI.remove(id, smallPackTable);
+  Future<void> remove({required Word word}) async {
+    if(word.addedBy.name == AddedBy.smallPack.name){
+      await packAPI.remove(word.id, smallPackTable);
     }
-    if(addedBy.name == AddedBy.user.name){
-      await packAPI.remove(id, userTable);
+    if(word.addedBy.name == AddedBy.user.name){
+      await packAPI.remove(word.id, userTable);
     }
   }
 
