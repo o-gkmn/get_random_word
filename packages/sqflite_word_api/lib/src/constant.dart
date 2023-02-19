@@ -5,5 +5,7 @@ const int kVersion = 1;
 String columnId = "id";
 String columnEnglish = "englishWord";
 String columnTurkish = "turkishWord";
+String columnAddedBy = "addedBy";
 
-String table = "words";
+String userTable = "userWords";
+String smallPackTable = "smallPackWords";

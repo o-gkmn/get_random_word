@@ -14,7 +14,7 @@ class ListWordCubit extends Cubit<ListWordState> {
   void initialListWord() async {
     List<Word> words;
     try {
-      words = await repository.getWords();
+      words = await repository.getAllWords();
     } catch (e) {
       emit(state.copyWith(
           status: ListStatus.failure, exception: e as Exception));

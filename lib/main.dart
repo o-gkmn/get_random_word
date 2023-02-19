@@ -6,7 +6,7 @@ import 'package:sqflite_word_api/sqflite_word_api.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  final wordApi = SqfliteWordApi();
+  final wordApi = SqfliteDbHelper();
   final sharedPreferences = await SharedPreferences.getInstance();
   bootstrap(wordApi, sharedPreferences);
 }

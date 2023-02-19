@@ -3,13 +3,19 @@ import 'package:word_api/word_api.dart';
 abstract class WordApi {
   const WordApi();
 
-  Future<List<Word>> getWords();
+  Future<List<Word>> getAllWords();
 
-  Future<void> add(Word word);
+  Future<List<Word>> getWords({required AddedBy addedBy});
 
-  Future<void> remove(int id);
+  Future<void> fetchFromJson({required AddedBy addedBy});
 
-  Future<void> update(Word word);
+  Future<void> add({required Word word});
+
+  Future<void> remove({required AddedBy addedBy, required int id});
+
+  Future<void> clear({AddedBy? addedBy});
+
+  Future<void> update({required Word word});
 }
 
 class WordNotFoundExceptions implements Exception {}

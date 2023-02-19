@@ -19,7 +19,7 @@ class ShowWordCubit extends Cubit<ShowWordState> {
   void initialRandomWordList() async {
     try {
       emit(state.copyWith(pageStatus: PageStatus.loading));
-      words = await wordRepository.getWords();
+      words = await wordRepository.getAllWords();
       emit(state.copyWith(pageStatus: PageStatus.loaded));
     } catch (e) {
       emit(state.copyWith(

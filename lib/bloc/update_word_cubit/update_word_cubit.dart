@@ -13,7 +13,7 @@ class UpdateWordCubit extends Cubit<UpdateWordState> {
 
   void updateWord(Word word) async {
     try {
-      await repository.update(word);
+      await repository.update(word: word);
       emit(state.copyWith(status: UpdateStatus.succed));
     } catch (e) {
       emit(state.copyWith(
@@ -23,7 +23,7 @@ class UpdateWordCubit extends Cubit<UpdateWordState> {
 
   void deleteWord(int id) async {
     try {
-      await repository.remove(id);
+      await repository.remove(addedBy: AddedBy.user, id: id);
       emit(state.copyWith(status: UpdateStatus.succed));
     } catch (e) {
       emit(state.copyWith(

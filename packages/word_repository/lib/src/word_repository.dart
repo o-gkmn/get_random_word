@@ -5,11 +5,20 @@ class WordRepository {
 
   final WordApi _wordApi;
 
-  Future<List<Word>> getWords() => _wordApi.getWords();
+  Future<List<Word>> getAllWords() => _wordApi.getAllWords();
 
-  Future<void> add(Word word) => _wordApi.add(word);
+  Future<List<Word>> getWords({required AddedBy addedBy}) =>
+      _wordApi.getWords(addedBy: addedBy);
 
-  Future<void> remove(int id) => _wordApi.remove(id);
+  Future<void> fetchFromJson({required AddedBy addedBy}) =>
+      _wordApi.fetchFromJson(addedBy: addedBy);
 
-  Future<void> update(Word word) => _wordApi.update(word);
+  Future<void> add({required Word word}) => _wordApi.add(word: word);
+
+  Future<void> remove({required AddedBy addedBy, required int id}) =>
+      _wordApi.remove(addedBy: addedBy, id: id);
+
+  Future<void> clear({AddedBy? addedBy}) => _wordApi.clear(addedBy: addedBy);
+
+  Future<void> update({required Word word}) => _wordApi.update(word: word);
 }

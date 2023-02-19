@@ -12,7 +12,7 @@ class AddWordCubit extends Cubit<AddWordState> {
 
   void addWord(Word word) async {
     try {
-      await repository.add(word);
+      await repository.add(word: word);
       emit(state.copyWith(status: AddWordStatus.succes));
     } catch (e) {
       emit(AddWordState(
