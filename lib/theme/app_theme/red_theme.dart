@@ -11,17 +11,18 @@ class RedTheme extends AppTheme {
 
     ColorScheme colorScheme = const ColorScheme(
       brightness: Brightness.light,
-      primary: Color.fromARGB(248, 206, 32, 32),
-      onPrimary: Color.fromARGB(255, 247, 50, 50),
-      secondary: Color.fromARGB(255, 251, 99, 99),
+      onPrimary: Color.fromARGB(248, 170, 27, 27),
+      primary: Color.fromARGB(255, 255, 50, 50),
+      secondary: Color.fromARGB(255, 237, 68, 68),
       onSecondary: Color.fromARGB(248, 237, 84, 84),
       error: Color.fromARGB(255, 255, 17, 0),
       onError: Color.fromARGB(129, 255, 17, 0),
-      background: Color.fromARGB(255, 255, 255, 255),
-      onBackground: Color.fromARGB(164, 255, 255, 255),
-      surface: Color.fromARGB(255, 255, 98, 98),
+      background: Color.fromARGB(255, 241, 215, 215),
+      onBackground: Color.fromARGB(255, 0, 0, 0),
+      surface: Color.fromARGB(255, 251, 73, 73),
       onSurface: Color.fromARGB(255, 255, 255, 255),
       shadow: Color.fromARGB(255, 63, 63, 63),
+      outline: Color.fromARGB(255, 225, 225, 225),
     );
 
     ThemeData theme = ThemeData.from(
@@ -35,17 +36,18 @@ class RedTheme extends AppTheme {
 
     ColorScheme colorScheme = const ColorScheme(
       brightness: Brightness.dark,
-      primary: Color.fromARGB(249, 131, 33, 33),
-      onPrimary: Color.fromARGB(248, 208, 37, 37),
-      secondary: Color.fromARGB(248, 99, 7, 7),
+      primary: Color.fromARGB(248, 203, 2, 2),
+      onPrimary: Color.fromARGB(249, 131, 33, 33),
+      secondary: Color.fromARGB(248, 157, 11, 11),
       onSecondary: Color.fromARGB(248, 173, 14, 14),
       error: Color.fromARGB(255, 255, 17, 0),
       onError: Color.fromARGB(129, 255, 17, 0),
       background: Color.fromARGB(255, 45, 51, 63),
-      onBackground: Color.fromARGB(163, 56, 56, 56),
-      surface: Color.fromARGB(255, 226, 72, 72),
+      onBackground: Color.fromARGB(255, 255, 255, 255),
+      surface: Color.fromARGB(255, 251, 73, 73),
       onSurface: Color.fromARGB(255, 255, 255, 255),
       shadow: Color.fromARGB(255, 63, 63, 63),
+      outline: Color.fromARGB(255, 77, 77, 77),
     );
 
     ThemeData theme = ThemeData.from(
