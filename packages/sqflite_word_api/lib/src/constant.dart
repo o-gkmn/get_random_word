@@ -9,3 +9,5 @@ String columnAddedBy = "addedBy";
 
 String userTable = "userWords";
 String smallPackTable = "smallPackWords";
+String mediumPackTable = "mediumPackTable";
+String largePackTable = "largePackTable";

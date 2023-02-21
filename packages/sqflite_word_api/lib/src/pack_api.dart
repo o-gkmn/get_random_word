@@ -17,7 +17,8 @@ class PackAPI {
 
   Future<Database> initializeDb() async {
     String dbPath = join(await getDatabasesPath(), dbName);
-    var wordsDb = await openDatabase(dbPath, version: 1, onCreate: createTable);
+    var wordsDb = await openDatabase(dbPath,
+        version: 1, onCreate: createTable, onOpen: checkTable);
     return wordsDb;
   }
 
@@ -28,6 +29,44 @@ class PackAPI {
     await db.rawQuery(
       "create table if not exists $smallPackTable($columnId integer primary key AUTOINCREMENT, $columnEnglish text, $columnTurkish text, $columnAddedBy addedBy)",
     );
+    await db.rawQuery(
+      "create table if not exists $mediumPackTable($columnId integer primary key AUTOINCREMENT, $columnEnglish text, $columnTurkish text, $columnAddedBy addedBy)",
+    );
+    await db.rawQuery(
+      "create table if not exists $largePackTable($columnId integer primary key AUTOINCREMENT, $columnEnglish text, $columnTurkish text, $columnAddedBy addedBy)",
+    );
+  }
+
+  void checkTable(Database db) async {
+    var user = await db.rawQuery(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name='$userTable';");
+    var smallPack = await db.rawQuery(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name='$largePackTable';");
+    var mediumPack = await db.rawQuery(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name='$mediumPackTable';");
+    var largePack = await db.rawQuery(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name='$largePackTable';");
+    
+    if (user.isEmpty) {
+      await db.rawQuery(
+        "create table if not exists $userTable($columnId integer primary key AUTOINCREMENT, $columnEnglish text, $columnTurkish text, $columnAddedBy addedBy)",
+      );
+    }
+    if (smallPack.isEmpty) {
+      await db.rawQuery(
+        "create table if not exists $smallPackTable($columnId integer primary key AUTOINCREMENT, $columnEnglish text, $columnTurkish text, $columnAddedBy addedBy)",
+      );
+    }
+    if (mediumPack.isEmpty) {
+      await db.rawQuery(
+        "create table if not exists $mediumPackTable($columnId integer primary key AUTOINCREMENT, $columnEnglish text, $columnTurkish text, $columnAddedBy addedBy)",
+      );
+    }
+    if (largePack.isEmpty) {
+      await db.rawQuery(
+        "create table if not exists $largePackTable($columnId integer primary key AUTOINCREMENT, $columnEnglish text, $columnTurkish text, $columnAddedBy addedBy)",
+      );
+    }
   }
 
   Future<void> deleteDatabase() async {
