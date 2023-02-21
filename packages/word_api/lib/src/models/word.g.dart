@@ -14,7 +14,7 @@ Word _$WordFromJson(Map<String, dynamic> json) => Word(
     );
 
 Map<String, dynamic> _$WordToJson(Word instance) => <String, dynamic>{
-      'id': instance.id,
+      //'id': instance.id,
       'englishWord': instance.englishWord,
       'turkishWord': instance.turkishWord,
       'addedBy': _$AddedByEnumMap[instance.addedBy]!,
