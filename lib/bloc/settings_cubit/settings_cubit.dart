@@ -36,36 +36,36 @@ class SettingsCubit extends Cubit<SettingsState> {
   void switchSmallPack(bool isChecked) async {
     if (isChecked) {
       _wordRepository.fetchFromJson(addedBy: AddedBy.smallPack);
-      await _settingsRepository.setSmallPackSetting(isChecked);
       emit(state.copyWith(smallPackSetting: true));
     } else {
       _wordRepository.clear(addedBy: AddedBy.smallPack);
-      await _settingsRepository.setSmallPackSetting(isChecked);
       emit(state.copyWith(smallPackSetting: false));
     }
+    await _settingsRepository.setSmallPackSetting(isChecked);
+    await _wordRepository.getAllWords();
   }
 
   void switchMediumPack(bool isChecked) async {
     if (isChecked) {
       _wordRepository.fetchFromJson(addedBy: AddedBy.mediumPack);
-      await _settingsRepository.setMediumPackSetting(isChecked);
       emit(state.copyWith(mediumPackSetting: true));
     } else {
       _wordRepository.clear(addedBy: AddedBy.mediumPack);
-      await _settingsRepository.setMediumPackSetting(isChecked);
       emit(state.copyWith(mediumPackSetting: false));
     }
+    await _settingsRepository.setMediumPackSetting(isChecked);
+    await _wordRepository.getAllWords();
   }
 
   void switchLargePack(bool isChecked) async {
     if (isChecked) {
       _wordRepository.fetchFromJson(addedBy: AddedBy.largePack);
-      await _settingsRepository.setLargePackSetting(isChecked);
       emit(state.copyWith(largePackSetting: true));
     } else {
       _wordRepository.clear(addedBy: AddedBy.largePack);
-      await _settingsRepository.setLargePackSetting(isChecked);
       emit(state.copyWith(largePackSetting: false));
     }
+    await _settingsRepository.setLargePackSetting(isChecked);
+    await _wordRepository.getAllWords();
   }
 }
