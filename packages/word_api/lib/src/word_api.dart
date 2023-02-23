@@ -7,6 +7,8 @@ abstract class WordApi {
 
   Future<List<Word>> getWords({required AddedBy addedBy});
 
+  Stream<List<Word>> listenWordsLists();
+
   Future<void> fetchFromJson({required AddedBy addedBy});
 
   Future<void> add({required Word word});

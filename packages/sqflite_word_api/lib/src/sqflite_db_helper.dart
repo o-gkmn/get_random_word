@@ -1,20 +1,19 @@
-import 'package:path/path.dart';
-import 'package:sqflite/sqflite.dart';
+import 'dart:async';
+
 import 'package:sqflite_word_api/src/pack_api.dart';
 import 'package:word_api/word_api.dart';
 
 import 'constant.dart';
 
 class SqfliteDbHelper extends WordApi {
-  PackAPI packAPI = PackAPI();
-  String smallPackPath = 'assets/data_source/small_word_pack.json';
-  String mediumPackPath = 'assets/data_source/medium_word_pack.json';
-  String largePackPath = "assets/data_source/large_word_pack.json";
+  final PackAPI packAPI = PackAPI();
 
-  Future<void> deleteDatabase() async {
-    String dbPath = join(await getDatabasesPath(), dbName);
-    databaseFactory.deleteDatabase(dbPath);
-  }
+  final StreamController<List<Word>> _controller =
+      StreamController<List<Word>>();
+
+  final String smallPackPath = 'assets/data_source/small_word_pack.json';
+  final String mediumPackPath = 'assets/data_source/medium_word_pack.json';
+  final String largePackPath = "assets/data_source/large_word_pack.json";
 
   @override
   Future<List<Word>> getWords({required AddedBy addedBy}) async {
@@ -41,7 +40,14 @@ class SqfliteDbHelper extends WordApi {
       ...await packAPI.getWordsFromSingleTable(mediumPackTable),
       ...await packAPI.getWordsFromSingleTable(largePackTable),
     ];
+
+    _controller.add(words);
     return words;
+  }
+
+  @override
+  Stream<List<Word>> listenWordsLists() async* {
+    yield* _controller.stream;
   }
 
   @override

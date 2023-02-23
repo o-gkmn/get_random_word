@@ -10,6 +10,8 @@ class WordRepository {
   Future<List<Word>> getWords({required AddedBy addedBy}) =>
       _wordApi.getWords(addedBy: addedBy);
 
+  Stream<List<Word>> listenWordsList() => _wordApi.listenWordsLists();
+
   Future<void> fetchFromJson({required AddedBy addedBy}) =>
       _wordApi.fetchFromJson(addedBy: addedBy);
 
