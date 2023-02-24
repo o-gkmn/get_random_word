@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 
 import 'package:bloc/bloc.dart';
@@ -13,6 +14,7 @@ class ShowWordCubit extends Cubit<ShowWordState> {
 
   late Word randomWord;
   late List<Word> words;
+  late StreamSubscription<List<Word>> wordsListSubscription;
 
   final WordRepository wordRepository;
 
@@ -20,6 +22,9 @@ class ShowWordCubit extends Cubit<ShowWordState> {
     try {
       emit(state.copyWith(pageStatus: PageStatus.loading));
       words = await wordRepository.getAllWords();
+      wordsListSubscription = wordRepository.listenWordsList().listen((event) {
+        words = event;
+      });
       emit(state.copyWith(pageStatus: PageStatus.loaded));
     } catch (e) {
       emit(state.copyWith(
@@ -81,5 +86,11 @@ class ShowWordCubit extends Cubit<ShowWordState> {
         state.wordStatus == WordStatus.bothClose) {
       generateRandomWord();
     }
+  }
+
+  @override
+  Future<void> close() {
+    wordsListSubscription.cancel();
+    return super.close();
   }
 }

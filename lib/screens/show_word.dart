@@ -12,7 +12,7 @@ class ShowWord extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => ShowWordCubit(
-        RepositoryProvider.of<WordRepository>(context),
+        RepositoryProvider.of<WordRepository>(context)..getAllWords(),
       )..initialRandomWordList(),
       child: const ShowWordView(),
     );
@@ -67,7 +67,7 @@ class ShowWordDesign extends StatelessWidget {
               context: context,
               builder: (context) => CustomAlertDialog(
                   alertText: state.exception.toString().substring(11)));
-        context.read<ShowWordCubit>().initialRandomWordList();
+          context.read<ShowWordCubit>().initialRandomWordList();
         }
       },
       child: Column(
@@ -193,9 +193,7 @@ class _NavigateAddWord extends StatelessWidget {
           Icons.add,
           color: Theme.of(context).colorScheme.onSurface,
         ),
-        onPressed: () => Navigator.pushNamed(context, addWord).then(
-          (value) => context.read<ShowWordCubit>().initialRandomWordList(),
-        ),
+        onPressed: () => Navigator.pushNamed(context, addWord),
       ),
     );
   }
