@@ -197,7 +197,7 @@ class _SaveButton extends StatelessWidget {
                 formKey.currentState!.save();
                 context.read<UpdateWordCubit>().updateWord(state.word.copyWith(
                     englishWord: englishWord, turkishWord: turkishWord));
-                Navigator.pushReplacementNamed(context, listWord);
+                Navigator.pop(context, listWord);
               }
             },
             child: Text(
@@ -223,7 +223,7 @@ class _DeleteButton extends StatelessWidget {
         child: ElevatedButton(
             onPressed: () {
               context.read<UpdateWordCubit>().deleteWord(state.word);
-              Navigator.pushReplacementNamed(context, listWord);
+              Navigator.pop(context, listWord);
             },
             child:
                 Text("Sil", style: Theme.of(context).textTheme.displayMedium)),

@@ -21,7 +21,6 @@ class ShowWordCubit extends Cubit<ShowWordState> {
   void initialRandomWordList() async {
     try {
       emit(state.copyWith(pageStatus: PageStatus.loading));
-      words = await wordRepository.getAllWords();
       wordsListSubscription = wordRepository.listenWordsList().listen((event) {
         words = event;
       });
@@ -89,8 +88,8 @@ class ShowWordCubit extends Cubit<ShowWordState> {
   }
 
   @override
-  Future<void> close() {
-    wordsListSubscription.cancel();
+  Future<void> close() async{
+    await wordsListSubscription.cancel();
     return super.close();
   }
 }
