@@ -15,6 +15,7 @@ class UpdateWordCubit extends Cubit<UpdateWordState> {
     try {
       await repository.update(word: word);
       emit(state.copyWith(status: UpdateStatus.succed));
+      repository.getAllWords();
     } catch (e) {
       emit(state.copyWith(
           status: UpdateStatus.failure, exception: e as Exception));
@@ -25,6 +26,7 @@ class UpdateWordCubit extends Cubit<UpdateWordState> {
     try {
       await repository.remove(word: word);
       emit(state.copyWith(status: UpdateStatus.succed));
+      repository.getAllWords();
     } catch (e) {
       emit(state.copyWith(
           status: UpdateStatus.failure, exception: e as Exception));

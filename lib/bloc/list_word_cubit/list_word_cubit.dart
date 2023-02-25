@@ -1,4 +1,6 @@
 // ignore: depend_on_referenced_packages
+import 'dart:async';
+
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:word_repository/word_repository.dart';
@@ -10,20 +12,27 @@ class ListWordCubit extends Cubit<ListWordState> {
       : super(const ListWordState(status: ListStatus.initial));
 
   final WordRepository repository;
+  late StreamSubscription<List<Word>> streamSubscription;
 
   void initialListWord() async {
-    List<Word> words;
     try {
-      words = await repository.getAllWords();
+      streamSubscription = repository.listenWordsList().listen((words) {
+        if (words.isEmpty) {
+          emit(state.copyWith(status: ListStatus.empty));
+        } else {
+          emit(state.copyWith(status: ListStatus.succed, words: words));
+        }
+      });
     } catch (e) {
       emit(state.copyWith(
           status: ListStatus.failure, exception: e as Exception));
       return;
     }
-    if (words.isEmpty) {
-      emit(state.copyWith(status: ListStatus.empty));
-    } else {
-      emit(state.copyWith(status: ListStatus.succed, words: words));
-    }
+  }
+
+  @override
+  Future<void> close() async {
+    await streamSubscription.cancel();
+    return super.close();
   }
 }

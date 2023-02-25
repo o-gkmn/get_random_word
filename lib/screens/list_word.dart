@@ -12,7 +12,7 @@ class ListWord extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) =>
-          ListWordCubit(RepositoryProvider.of<WordRepository>(context))..initialListWord(),
+          ListWordCubit(RepositoryProvider.of<WordRepository>(context)..getAllWords())..initialListWord(),
       child: Scaffold(
         appBar: AppBar(
           title: Text(
