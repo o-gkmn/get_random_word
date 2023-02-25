@@ -9,7 +9,7 @@ class SqfliteDbHelper extends WordApi {
   final PackAPI packAPI = PackAPI();
 
   final StreamController<List<Word>> _controller =
-      StreamController<List<Word>>();
+      StreamController<List<Word>>.broadcast();
 
   final String smallPackPath = 'assets/data_source/small_word_pack.json';
   final String mediumPackPath = 'assets/data_source/medium_word_pack.json';
@@ -47,7 +47,7 @@ class SqfliteDbHelper extends WordApi {
 
   @override
   Stream<List<Word>> listenWordsLists() async* {
-    yield* _controller.stream;
+    yield* _controller.stream.asBroadcastStream();
   }
 
   @override
@@ -118,5 +118,10 @@ class SqfliteDbHelper extends WordApi {
     if (word.addedBy.name == AddedBy.user.name) {
       await packAPI.update(word, userTable);
     }
+  }
+
+  @override
+  Future<void> dispose() async {
+    await _controller.close();
   }
 }

@@ -18,6 +18,8 @@ abstract class WordApi {
   Future<void> clear({AddedBy? addedBy});
 
   Future<void> update({required Word word});
+
+  Future<void> dispose();
 }
 
 class WordNotFoundExceptions implements Exception {}

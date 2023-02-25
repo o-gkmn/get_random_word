@@ -22,4 +22,6 @@ class WordRepository {
   Future<void> clear({AddedBy? addedBy}) => _wordApi.clear(addedBy: addedBy);
 
   Future<void> update({required Word word}) => _wordApi.update(word: word);
+
+  Future<void> dispose() => _wordApi.dispose();
 }
