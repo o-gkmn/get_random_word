@@ -13,10 +13,12 @@ class ListWordCubit extends Cubit<ListWordState> {
 
   final WordRepository repository;
   late StreamSubscription<List<Word>> streamSubscription;
+  late List<Word> wordsList;
 
   void initialListWord() async {
     try {
       streamSubscription = repository.listenWordsList().listen((words) {
+        wordsList = words;
         if (words.isEmpty) {
           emit(state.copyWith(status: ListStatus.empty));
         } else {
@@ -28,6 +30,26 @@ class ListWordCubit extends Cubit<ListWordState> {
           status: ListStatus.failure, exception: e as Exception));
       return;
     }
+  }
+
+  void filterUserWord() async {
+    List<Word> filteredWord = [];
+    for(Word word in wordsList){
+      if(word.addedBy == AddedBy.user){
+        filteredWord.add(word);
+      }
+    }
+    emit(state.copyWith(words: filteredWord));
+  }
+
+  void filterSystemWord() {
+    List<Word> filteredWord = [];
+    for(Word word in wordsList) {
+      if(word.addedBy != AddedBy.user){
+        filteredWord.add(word);
+      }
+    }
+    emit(state.copyWith(words: filteredWord));
   }
 
   @override
