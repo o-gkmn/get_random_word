@@ -40,7 +40,7 @@ class GreenTheme extends AppTheme {
         const PrimaryTextTheme(isLight: false).primaryTextTheme;
 
     ColorScheme colorScheme = const ColorScheme(
-      brightness: Brightness.light,
+      brightness: Brightness.dark,
       primary: Color.fromARGB(255, 77, 150, 65),
       onPrimary: Color.fromARGB(255, 15, 103, 27),
       secondary: Color.fromARGB(255, 35, 99, 25),
