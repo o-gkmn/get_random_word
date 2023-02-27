@@ -27,23 +27,56 @@ class _ListWordBody extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          PopupMenuButton(
-            itemBuilder: (_) {
-              return [
-                PopupMenuItem(
-                  child: const Text("Kullanıcı kelimeleri"),
-                  onTap: () => context.read<ListWordCubit>().filterUserWord(),
-                ),
-                PopupMenuItem(
-                  child: const Text("Sistem kelimeleri"),
-                  onTap: () => context.read<ListWordCubit>().filterSystemWord(),
-                )
-              ];
+          // PopupMenuButton(
+          //   itemBuilder: (_) {
+          //     return [
+          //       PopupMenuItem(
+          //         child: const Text("Kullanıcı kelimeleri"),
+          //         onTap: () => context.read<ListWordCubit>().filterUserWord(),
+          //       ),
+          //       PopupMenuItem(
+          //         child: const Text("Sistem kelimeleri"),
+          //         onTap: () => context.read<ListWordCubit>().filterSystemWord(),
+          //       )
+          //     ];
+          //   },
+          //   child: const Padding(
+          //     padding: EdgeInsets.all(8.0),
+          //     child: Icon(Icons.filter_list_rounded),
+          //   ),
+          // ),
+          IconButton(
+            icon: const Icon(Icons.filter_list),
+            onPressed: () {
+              showModalBottomSheet(
+                context: context,
+                builder: (context) {
+                  return Container(
+                    height: 200,
+                    color: Theme.of(context).scaffoldBackgroundColor,
+                    child: Center(
+                      child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            ElevatedButton(
+                              onPressed: () => context
+                                  .read<ListWordCubit>()
+                                  .filterUserWord(),
+                              child: const Text("Kullanıcı Kelimeleri"),
+                            ),
+                            ElevatedButton(
+                              onPressed: () => context
+                                  .read<ListWordCubit>()
+                                  .filterSystemWord(),
+                              child: const Text("Sistem Kelimeleri"),
+                            )
+                          ]),
+                    ),
+                  );
+                },
+              );
             },
-            child: const Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Icon(Icons.filter_list_rounded),
-            ),
           ),
           IconButton(
               onPressed: () => showSearch(
