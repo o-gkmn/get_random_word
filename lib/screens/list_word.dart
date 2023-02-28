@@ -50,11 +50,10 @@ class _ListWordBody extends StatelessWidget {
             onPressed: () {
               showModalBottomSheet(
                 context: context,
+                backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+                enableDrag: true,
                 builder: (context) {
-                  return Container(
-                    height: 200,
-                    color: Theme.of(context).scaffoldBackgroundColor,
-                    child: Center(
+                  return Center(
                       child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           mainAxisSize: MainAxisSize.min,
@@ -63,17 +62,24 @@ class _ListWordBody extends StatelessWidget {
                               onPressed: () => context
                                   .read<ListWordCubit>()
                                   .filterUserWord(),
-                              child: const Text("Kullanıcı Kelimeleri"),
+                              child: Text(
+                                "Kullanıcı Kelimeleri",
+                                style:
+                                    Theme.of(context).textTheme.displayMedium,
+                              ),
                             ),
                             ElevatedButton(
                               onPressed: () => context
                                   .read<ListWordCubit>()
                                   .filterSystemWord(),
-                              child: const Text("Sistem Kelimeleri"),
+                              child: Text(
+                                "Sistem Kelimeleri",
+                                style:
+                                    Theme.of(context).textTheme.displayMedium,
+                              ),
                             )
                           ]),
-                    ),
-                  );
+                    );
                 },
               );
             },
@@ -82,7 +88,8 @@ class _ListWordBody extends StatelessWidget {
               onPressed: () => showSearch(
                     context: context,
                     delegate: _WordsListSearchDelegate(
-                        words: context.read<ListWordCubit>().wordsList),
+                      words: context.read<ListWordCubit>().wordsList,
+                    ),
                   ),
               icon: const Icon(Icons.search))
         ],
@@ -95,9 +102,11 @@ class _ListWordBody extends StatelessWidget {
         listener: (context, state) {
           if (state.status == ListStatus.failure) {
             showDialog(
-                context: context,
-                builder: (context) =>
-                    CustomAlertDialog(alertText: state.exception.toString()));
+              context: context,
+              builder: (context) => CustomAlertDialog(
+                alertText: state.exception.toString(),
+              ),
+            );
           }
         },
         builder: (context, state) {
