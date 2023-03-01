@@ -62,11 +62,11 @@ class _ListWordBody extends StatelessWidget {
                   itemCount: state.words.length,
                   itemBuilder: (BuildContext context, int index) {
                     return Card(
-                      color: Theme.of(context).colorScheme.onPrimary,
+                      color: Theme.of(context).colorScheme.onPrimary.withAlpha(96),
                       margin: const EdgeInsets.only(
                           bottom: 3, left: 3.0, right: 3.0, top: 7),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
+                        borderRadius: BorderRadius.circular(8.0),
                       ),
                       child: ListTile(
                         title: Text(
@@ -115,7 +115,7 @@ class _ListWordBody extends StatelessWidget {
             return Container(
               height: MediaQuery.of(context).size.height * 0.20,
               decoration: BoxDecoration(
-                color: Theme.of(context).scaffoldBackgroundColor,
+                color: Theme.of(context).colorScheme.background,
                 borderRadius: const BorderRadius.only(
                   topLeft: Radius.elliptical(28.0, 28.0),
                   topRight: Radius.elliptical(28.0, 28.0),
@@ -211,11 +211,11 @@ class _WordsListSearchDelegate extends SearchDelegate {
         itemCount: matchQuery.length,
         itemBuilder: (BuildContext context, int index) {
           return Card(
-            color: Theme.of(context).colorScheme.onPrimary,
+            color: Theme.of(context).colorScheme.onPrimary.withAlpha(96),
             margin:
                 const EdgeInsets.only(bottom: 3, left: 3.0, right: 3.0, top: 7),
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(15.0),
+              borderRadius: BorderRadius.circular(8.0),
             ),
             child: ListTile(
               title: Text(
@@ -253,11 +253,11 @@ class _WordsListSearchDelegate extends SearchDelegate {
         itemCount: matchQuery.length,
         itemBuilder: (BuildContext context, int index) {
           return Card(
-            color: Theme.of(context).colorScheme.onPrimary,
+            color: Theme.of(context).colorScheme.onPrimary.withAlpha(96),
             margin:
                 const EdgeInsets.only(bottom: 3, left: 3.0, right: 3.0, top: 7),
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(15.0),
+              borderRadius: BorderRadius.circular(8.0),
             ),
             child: ListTile(
               title: Text(
