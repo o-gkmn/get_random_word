@@ -27,63 +27,7 @@ class _ListWordBody extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          // PopupMenuButton(
-          //   itemBuilder: (_) {
-          //     return [
-          //       PopupMenuItem(
-          //         child: const Text("Kullanıcı kelimeleri"),
-          //         onTap: () => context.read<ListWordCubit>().filterUserWord(),
-          //       ),
-          //       PopupMenuItem(
-          //         child: const Text("Sistem kelimeleri"),
-          //         onTap: () => context.read<ListWordCubit>().filterSystemWord(),
-          //       )
-          //     ];
-          //   },
-          //   child: const Padding(
-          //     padding: EdgeInsets.all(8.0),
-          //     child: Icon(Icons.filter_list_rounded),
-          //   ),
-          // ),
-          IconButton(
-            icon: const Icon(Icons.filter_list),
-            onPressed: () {
-              showModalBottomSheet(
-                context: context,
-                backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-                enableDrag: true,
-                builder: (context) {
-                  return Center(
-                      child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            ElevatedButton(
-                              onPressed: () => context
-                                  .read<ListWordCubit>()
-                                  .filterUserWord(),
-                              child: Text(
-                                "Kullanıcı Kelimeleri",
-                                style:
-                                    Theme.of(context).textTheme.displayMedium,
-                              ),
-                            ),
-                            ElevatedButton(
-                              onPressed: () => context
-                                  .read<ListWordCubit>()
-                                  .filterSystemWord(),
-                              child: Text(
-                                "Sistem Kelimeleri",
-                                style:
-                                    Theme.of(context).textTheme.displayMedium,
-                              ),
-                            )
-                          ]),
-                    );
-                },
-              );
-            },
-          ),
+          _filterIconButton(context: context),
           IconButton(
               onPressed: () => showSearch(
                     context: context,
@@ -157,6 +101,66 @@ class _ListWordBody extends StatelessWidget {
           }
         },
       ),
+    );
+  }
+
+  Widget _filterIconButton({required BuildContext context}) {
+    return IconButton(
+      icon: const Icon(Icons.filter_list),
+      onPressed: () {
+        showModalBottomSheet(
+          context: context,
+          enableDrag: true,
+          builder: (_) {
+            return Container(
+              height: MediaQuery.of(context).size.height * 0.20,
+              decoration: BoxDecoration(
+                color: Theme.of(context).scaffoldBackgroundColor,
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.elliptical(28.0, 28.0),
+                  topRight: Radius.elliptical(28.0, 28.0),
+                ),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Divider(
+                    indent: MediaQuery.of(context).size.width * 0.43,
+                    endIndent: MediaQuery.of(context).size.width * 0.44,
+                    thickness: 2.0,
+                  ),
+                  TextButton(
+                    style: const ButtonStyle(
+                      alignment: Alignment.centerLeft,
+                    ),
+                    onPressed: () {
+                      context.read<ListWordCubit>().filterUserWord();
+                      Navigator.pop(context);
+                    },
+                    child: Text(
+                      "Kullanıcı Kelimeleri",
+                      style: Theme.of(context).textTheme.displayMedium,
+                    ),
+                  ),
+                  TextButton(
+                    style: const ButtonStyle(alignment: Alignment.centerLeft),
+                    onPressed: () {
+                      context.read<ListWordCubit>().filterSystemWord();
+                      Navigator.pop(context);
+                    },
+                    child: Text(
+                      "Sistem Kelimeleri",
+                      style: Theme.of(context).textTheme.displayMedium,
+                    ),
+                  )
+                ],
+              ),
+            );
+          },
+        );
+      },
     );
   }
 }
